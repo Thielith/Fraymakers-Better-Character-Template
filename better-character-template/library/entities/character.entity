@@ -2202,7 +2202,7 @@
     },
     {
       "$id": "f0c08321-ed28-4973-b03a-817311d65682",
-      "code": "enableClutchReversal();",
+      "code": "enableClutch();",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39048,7 +39048,7 @@
     },
     {
       "$id": "6817e7eb-3f7b-4e52-9954-1d0849f4df16",
-      "code": "enableClutchReversal();",
+      "code": "enableClutch();",
       "length": 1,
       "pluginMetadata": {
       },

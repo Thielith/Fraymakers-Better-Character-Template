@@ -7,8 +7,8 @@ var lastDisabledNSpecStatusEffect = self.makeObject(null);
 
 var downSpecialLoopCheckTimer = self.makeInt(-1);
 
-var clutchReversalTimer = self.makeInt(-1); // tracks the latest
-var clutchButtonHeld = self.makeBool(false); // Check if the clutch button is held current frame
+var clutchTimer = self.makeInt(-1); // tracks the latest
+var clutchButtonIsHeld = self.makeBool(false); // Check if the clutch button is held current frame
 var clutchButtonWasHeld = self.makeBool(false); // Check if the clutch button was held prev. frame
 
 //offset projectile start position
@@ -31,8 +31,8 @@ function update(){
 function inputUpdateHook(pressedControls:ControlsObject, heldControls:ControlsObject) {
     // This also runs when updating the buffer, below code should only be run on input tick
 	if (self.isFirstInputUpdate()) {
-        clutchButtonWasHeld.set(clutchButtonHeld.get());
-		clutchButtonHeld.set(heldControls.SHIELD2);
+        clutchButtonWasHeld.set(clutchButtonIsHeld.get());
+		clutchButtonIsHeld.set(heldControls.SHIELD2);
 	}
 
     // This runs when reading the buffer and on input tick -
@@ -60,48 +60,49 @@ function handleLinkFrames(e){
 function onTeardown() {
 	
 }
-
 // --- end general functions
 
-// Clutch Reversal logic
 
-// Starting to hold button means not held previous frame, but held current frame
-function startedHoldingClutch() {
-    return !clutchButtonWasHeld.get() && clutchButtonHeld.get();
+
+// ===== Clutch Reversal logic =====
+
+function clutchButtonPressed() {
+    return !clutchButtonWasHeld.get() && clutchButtonIsHeld.get();
 }
 
-// Allow clutch reversal for the current animation (or until disabled)
-function enableClutchReversal() {
-    // remove any clutch checks if already being done in this animation
-    disableClutchReversal();
+// enables clutch for current animation
+function enableClutch() {
+    // remove any pre-existing clutch checks
+    disableClutch();
 
-    // On frame enabled, check if started holding current frame. If yes, then apply reversal and don't add the timer
-    if (startedHoldingClutch()) {
-        applyClutchReversal();
+    // don't have to set timer if clutch button is held the frame this code runs
+    if (clutchButtonPressed()) {
+        doClutchStuff();
         return;
     }
 
-    // timer that waits until startedHoldingClutch is true, then runs applyClutchReversal
-    var timer = self.addTimer(0, -1, applyClutchReversal, {condition: startedHoldingClutch});
-    clutchReversalTimer.set(timer);
+    // when clutchButtonPressed, doClutchStuff()
+    var timer = self.addTimer(0, -1, doClutchStuff, {condition: clutchButtonPressed});
+    clutchTimer.set(timer);
 }
 
-// Disable clutch reversal for the current move 
-function disableClutchReversal() {
-    self.removeTimer(clutchReversalTimer.get());
-    clutchReversalTimer.set(-1);
+function disableClutch() {
+    self.removeTimer(clutchTimer.get());
+    clutchTimer.set(-1);
 }
 
-// Reverse momentum if clutch pressed (and enabled for current move)
-function applyClutchReversal() {
+// example clutch behavior:  reverse horizontal velocity
+function doClutchStuff() {
     self.flip();
     self.setXVelocity(-1 * self.getXVelocity());
 
     AudioClip.play(self.getResource().getContent("downspecial"));
     
     // disable clutch for the rest of this animation (so no double clutch)
-    disableClutchReversal();
+    disableClutch();
 }
+
+// ===== End Clutch Reversal logic =====
 
 
 //Rapid Jab logic
