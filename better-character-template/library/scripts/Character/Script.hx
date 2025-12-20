@@ -64,57 +64,46 @@ function onTeardown() {
 
 
 
-// ===== Clutch Reversal logic =====
+// ===== Clutch logic =====
 
-function clutchButtonPressed() {
-    return !clutchButtonWasHeld.get() && clutchButtonIsHeld.get();
-}
-
-// enables clutch for current animation
-function enableClutch() {
-    // remove any pre-existing clutch checks
-    disableClutch();
-
-    // don't have to set timer if clutch button is held the frame this code runs
-    if (clutchButtonPressed()) {
-        doClutchStuff();
-        return;
+    function clutchButtonPressed() {
+        return !clutchButtonWasHeld.get() && clutchButtonIsHeld.get();
     }
 
-    // when clutchButtonPressed, doClutchStuff()
-    var timer = self.addTimer(0, -1, doClutchStuff, {condition: clutchButtonPressed});
-    clutchTimer.set(timer);
-}
+    // enables clutch for current animation
+    function enableClutch() {
+        // remove any pre-existing clutch checks
+        disableClutch();
 
-function disableClutch() {
-    self.removeTimer(clutchTimer.get());
-    clutchTimer.set(-1);
-}
+        // don't have to set timer if clutch button is held the frame this code runs
+        if (clutchButtonPressed()) {
+            doClutchStuff();
+            return;
+        }
 
-// example clutch behavior:  reverse horizontal velocity
-function doClutchStuff() {
-    self.flip();
-    self.setXVelocity(-1 * self.getXVelocity());
+        // when clutchButtonPressed, doClutchStuff()
+        var timer = self.addTimer(0, -1, doClutchStuff, {condition: clutchButtonPressed});
+        clutchTimer.set(timer);
+    }
 
-    AudioClip.play(self.getResource().getContent("downspecial"));
-    
-    // disable clutch for the rest of this animation (so no double clutch)
-    disableClutch();
-}
+    function disableClutch() {
+        self.removeTimer(clutchTimer.get());
+        clutchTimer.set(-1);
+    }
 
-// ===== End Clutch Reversal logic =====
+    // example clutch behavior:  reverse horizontal velocity
+    function doClutchStuff() {
+        self.flip();
+        self.setXVelocity(-1 * self.getXVelocity());
 
+        AudioClip.play(self.getResource().getContent("downspecial"));
+        
+        // disable clutch for the rest of this animation (so no double clutch)
+        disableClutch();
+    }
 
-//Rapid Jab logic
-function jab3Loop(){
-    if (self.getHeldControls().ATTACK) {
-    	self.playFrame(2);
-        Common.startJabComboCheck(); // responsible for allowing you to mash attack button in addition to holding
-	} else {
-		Common.playFrameIfTrue(2);
-		Common.startJabComboCheck(); // responsible for allowing you to mash attack button in addition to holding
-	}
-}
+// ===== End Clutch logic =====
+
 //-----------NEUTRAL SPECIAL-----------
 
 //projectile

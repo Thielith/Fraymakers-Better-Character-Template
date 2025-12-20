@@ -23116,7 +23116,7 @@
     },
     {
       "$id": "a422557b-689e-41ae-8b91-08243c9c0a97",
-      "code": "//logic located in Script.hx which tells the character if the attack button is held to loop back to frame 2 of this animation\r\n// Thielith note - Moved the code here cause it's not used anywhere else\r\n\r\n\r\n// Rapid Jab logic\r\nCommon.playFrameIfTrue(2);\r\n\r\n// allows you to hold the attack button to repeatedly jab\r\nif(self.getHeldControls().ATTACK){\r\n    self.playFrame(2);\r\n}\r\n\r\n// responsible for allowing you to mash attack button in addition to holding\r\n// Thielith note - from testing, it seems to make it so you don't get stuck in a jab loop if you spam the attack button\r\nCommon.startJabComboCheck(); \r\n",
+      "code": "//logic located in Script.hx which tells the character if the attack button is held to loop back to frame 2 of this animation\r\n// Thielith note - Moved the code here cause it's not used anywhere else\r\n\r\n// Rapid Jab logic\r\nCommon.playFrameIfTrue(2);\r\n\r\n// allows you to hold the attack button to repeatedly jab\r\nif(self.getHeldControls().ATTACK){\r\n    self.playFrame(2);\r\n}\r\n\r\n// responsible for allowing you to mash attack button in addition to holding\r\n// Thielith note - from testing, it seems to make it so you don't get stuck in a jab loop if you spam the attack button\r\nCommon.startJabComboCheck(); \r\n",
       "length": 1,
       "pluginMetadata": {
       },
