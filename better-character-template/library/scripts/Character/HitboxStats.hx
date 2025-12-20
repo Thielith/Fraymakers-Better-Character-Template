@@ -111,9 +111,8 @@
 		hitbox0: {
 			damage: 7,
 			angle: 270,
-			baseKnockback: 85, knockbackGrowth: 65,
+			baseKnockback: 65, knockbackGrowth: 40,
 			hitstop: -1, selfHitstop: -1,
-			buryType: BuryType.BURY, buryTimeBase: 30, buryTimeScaling: 1.5,
 			reversibleAngle: false,
 			limb: AttackLimb.BODY
 		}
@@ -154,7 +153,6 @@
 			angle: SpecialAngle.DEFAULT,
 			baseKnockback: 55, knockbackGrowth: 40,
 			hitstop: -1, selfHitstop: -1,
-			reversibleAngle: false,
 			limb: AttackLimb.FOOT
 		},
 		hitbox1: {
