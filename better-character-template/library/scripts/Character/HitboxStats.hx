@@ -118,14 +118,14 @@
 
 	//AERIAL ATTACKS
 	aerial_neutral: {
-		hitbox0: {
+		hitbox0: {  // gets updated on frame 8
 			damage: 10,
 			angle: 361,
 			baseKnockback: 40, knockbackGrowth: 65,
 			hitstop: -1, selfHitstop: -1,
 			limb: AttackLimb.FOOT
 		},
-		hitbox1: {
+		hitbox1: {  // gets updated on frame 8
 			damage: 10,
 			angle: 361,
 			baseKnockback: 40, knockbackGrowth: 65,
@@ -250,7 +250,7 @@
 		},
 	},
 	special_up: {
-		hitbox0: {
+		hitbox0: {  // updated on frame 9, 15
 			damage: 2,
 			angle: SpecialAngle.AUTOLINK_STRONGER,
 			baseKnockback: 140, knockbackGrowth: 100, knockbackCap: 75,
@@ -262,7 +262,7 @@
 		}
 	},
 	special_up_air: {
-		hitbox0: {
+		hitbox0: {  // updated on frame 9, 15
 			damage: 2,
 			angle: SpecialAngle.AUTOLINK_STRONGER,
 			baseKnockback: 140, knockbackGrowth: 100, knockbackCap: 75,
@@ -369,7 +369,7 @@
 	//UNUSED ATTACKS (Example attacks that are currently not used. You can rename the HitboxStats and the animation if you'd like to replace an existing animation.)
 	/*
 	aerial_neutral (multi-hit): {
-		hitbox0: {
+		hitbox0: {  // gets updated on frame 12
 			damage: 1,
 			angle: 40,
 			baseKnockback: 60, knockbackGrowth: 0,
@@ -377,7 +377,7 @@
 			reversibleAngle: false,
 			limb: AttackLimb.FOOT
 		},
-		hitbox1: {
+		hitbox1: {  // gets updated on frame 12
 			damage: 1,
 			angle: 40,
 			baseKnockback: 60, knockbackGrowth: 0,

@@ -1,5 +1,42 @@
 // API Script
 
+// Notes:
+// - format for framescript location:
+//   [animation name]/[layer name]:[frame number]
+//      e.g  stand/Framescript:70 means the stand animation, on the layer named Framescript, on frame 70
+//      e.g  special_side/Framescript:10, 15 means the special_side animation, on the layer named Framescript, on frame 10 and 15
+//
+// - if you define a variable without "var", you can reference them in Framescript layer keyframes
+// - you don't __need__ to have these magic number definitions and can just input the number directly.
+//   however, doing this makes it more clear as to what the numbers actually mean
+
+// --- Magic Number Definitions ---
+    CHANCE_BLINK_ONE = self.makeFloat(0.20);  // 1/5 chance to blink, used in stand/Framescript:70
+    CHANCE_BLINK_TWO = self.makeFloat(0.25);  // 1/4 chance to blink twice after blinking once, used in stand/Framescript:70
+
+    LEDGE_ATK_SPEED = self.makeFloat(10);  // used in ledge_attack/Framescript:8
+
+    DOWN_AIR_SPEED_X = self.makeFloat(5);   // used in aerial_down/Framescript:10
+    DOWN_AIR_SPEED_Y = self.makeFloat(18);  // used in aerial_down/Framescript:10
+
+    DASH_ATK_BOOST_X = self.makeFloat(12);  // used in dash_attack/Framescript:1
+    DASH_ATK_SHIFT_X = self.makeFloat(40);  // used in dash_attack/Framescript:16
+    DASH_ATK_SHIFT_Y = self.makeFloat(0);   // used in dash_attack/Framescript:16
+
+    DOWN_TILT_BOOST_X = self.makeFloat(10);  // used in tilt_down/Framescript:8
+
+    FORWARD_STRONG_ATK_CHANCE_CLIP = self.makeFloat(0.50);  // used in strong_forward_attack/Framescript:2
+    FORWARD_STRONG_ATK_BOOST_ONE_X = self.makeFloat(8.5);   // used in strong_forward_attack/Framescript:3
+    FORWARD_STRONG_ATK_BOOST_TWO_X = self.makeFloat(6.5);   // used in strong_forward_attack/Framescript:14
+
+    UP_SPECIAL_BOOST_X = self.makeFloat(5);    // used in special_up/Framescript:6, special_up_air/Framescript:6
+    UP_SPECIAL_BOOST_Y = self.makeFloat(-21);  // used in special_up/Framescript:6, special_up_air/Framescript:6
+
+    SIDE_SPECIAL_BOOST_X = self.makeFloat(8);    // used in special_side/Framescript:10, 15, 19, 23, 27
+    SIDE_SPECIAL_BOOST_Y = self.makeFloat(-15);  // used in special_side/Framescript:10
+// --- End Magic Number Definitions ---
+
+
 // Tracks active Neutral Special projectile (in case we need to handle any special cases)
 var projectile = self.makeObject(null); 
 
@@ -193,3 +230,16 @@ function onTeardown() {
         downSpecialLoopCheckTimer.set(self.addTimer(1, -1, specialDown_checkLoop));    
     }
 // ===== End Down Special =====
+
+// ===== Grab =====
+    // used on throw_forward/Framescript:1, 3, 7, 13, 18, 20
+    //         throw_back/Framescript:1, 4, 11, 18, 20
+    //         throw_up/Framescript:1, 6, 13
+    //         throw_down/Framescript:1, 4, 10, 12
+    function setOpponentHurtThrownFrame(frame:Int){
+        if (self.getGrabbedFoe().hasAnimation("hurt_thrown")) {
+            self.getGrabbedFoe().playAnimation("hurt_thrown");
+            self.getGrabbedFoe().playFrame(frame);
+        }
+    }
+// ===== End Grab =====

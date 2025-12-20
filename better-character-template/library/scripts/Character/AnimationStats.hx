@@ -110,7 +110,7 @@
 	//SPECIAL ATTACKS
 	special_neutral: {},
 	special_neutral_air: {},
-	special_up: {
+	special_up: {  // updated on frame 6, 7
 		leaveGroundCancel:false,
 		xSpeedConservation: 0.5, ySpeedConservation: 0.5,
 		allowMovement: true,
@@ -118,7 +118,7 @@
 		aerialSpeedCap: 3.25,
 		nextState:CState.FALL_SPECIAL
 	}, 
-	special_up_air: {
+	special_up_air: {  // updated on frame 6, 7
 		leaveGroundCancel:false,
 		xSpeedConservation: 0.5, ySpeedConservation: 0.5,
 		groundSpeedCap: 5.5,
@@ -160,7 +160,7 @@
 		landType:LandType.LINK_FRAMES,
 		landAnimation:"special_down"
 	},
-	special_side: {
+	special_side: {  // updated on frame 5, 11, 12, 29, 43
 		allowFastFall: false,
 		allowTurnOnFirstFrame: true,
 		leaveGroundCancel:false,
