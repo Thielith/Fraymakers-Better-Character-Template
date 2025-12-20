@@ -65,7 +65,6 @@ function onTeardown() {
 
 
 // ===== Clutch logic =====
-
     function clutchButtonPressed() {
         return !clutchButtonWasHeld.get() && clutchButtonIsHeld.get();
     }
@@ -107,92 +106,90 @@ function onTeardown() {
 
 
 // ===== Neutral Special =====
-
-//projectile
-function spawnAndFireProjectile(){
-    projectile.set(
-        match.createProjectile(self.getResource().getContent("fraynkieProjectile"), self)
-    );
-    
-    projectile.get().setX(
-        self.getX() + self.flipX(NSPEC_PROJ_X_OFFSET)
-    );
-    projectile.get().setY(
-        self.getY() + NSPEC_PROJ_Y_OFFSET
-    );
-}
-
-//cooldown timer
-function startNeutralSpecialCooldown(){
-    disableNeutralSpecial();
-    self.addTimer(NEUTRAL_SPECIAL_COOLDOWN, 1, enableNeutralSpecial, {persistent:true});
-}
-
-function disableNeutralSpecial(){
-    if (disableNSpecStatusEffect.get() != null) {
-        // Engine.log("neutral special already disabled");
-        return;
+    function spawnAndFireProjectile(){
+        projectile.set(
+            match.createProjectile(self.getResource().getContent("fraynkieProjectile"), self)
+        );
+        
+        projectile.get().setX(
+            self.getX() + self.flipX(NSPEC_PROJ_X_OFFSET)
+        );
+        projectile.get().setY(
+            self.getY() + NSPEC_PROJ_Y_OFFSET
+        );
     }
 
-    disableNSpecStatusEffect.set(self.addStatusEffect(StatusEffectType.DISABLE_ACTION, CharacterActions.SPECIAL_NEUTRAL));
-}
-
-function enableNeutralSpecial(){
-    if (disableNSpecStatusEffect.get() == null) {
-        // Engine.log("neutral special already enabled.");
-        return;
+    function startNeutralSpecialCooldown(){
+        disableNeutralSpecial();
+        self.addTimer(NEUTRAL_SPECIAL_COOLDOWN, 1, enableNeutralSpecial, {persistent:true});
     }
 
-    self.removeStatusEffect(StatusEffectType.DISABLE_ACTION, disableNSpecStatusEffect.get().id);
-    disableNSpecStatusEffect.set(null);
-}
+    function disableNeutralSpecial(){
+        if (disableNSpecStatusEffect.get() != null) {
+            // Engine.log("neutral special already disabled");
+            return;
+        }
+
+        disableNSpecStatusEffect.set(self.addStatusEffect(StatusEffectType.DISABLE_ACTION, CharacterActions.SPECIAL_NEUTRAL));
+    }
+
+    function enableNeutralSpecial(){
+        if (disableNSpecStatusEffect.get() == null) {
+            // Engine.log("neutral special already enabled.");
+            return;
+        }
+
+        self.removeStatusEffect(StatusEffectType.DISABLE_ACTION, disableNSpecStatusEffect.get().id);
+        disableNSpecStatusEffect.set(null);
+    }
+// ===== End Neutral Special =====
+
 
 // ===== Side Special =====
+    function onSideSpecialShieldHit(){
+        self.setXSpeed(-4);
+    }
 
-//shield hit slowdown 
-function sideSpecialShieldHit(){
-	self.setXSpeed(-4);
-}
-
-//jump cancel hit confirm
-function sideSpecialHit(){
-	self.updateAnimationStats({allowJump: true});
-}
+    // allow user to jump if the final hit hits
+    function onSideSpecialHit(){
+        self.updateAnimationStats({allowJump: true});
+    }
+// ===== End Side Special =====
 
 // ===== Down Special =====
-
-function specialDown_gotoEndlag(){
-    if(self.isOnFloor()){
-        self.playAnimation("special_down_endlag");
-    } else {
-        self.playAnimation("special_down_air_endlag");
+    function specialDown_gotoEndlag(){
+        if(self.isOnFloor()){
+            self.playAnimation("special_down_endlag");
+        } else {
+            self.playAnimation("special_down_air_endlag");
+        }
     }
-}
 
-function specialDown_resetTimer(){
-    self.removeTimer(downSpecialLoopCheckTimer.get());
-    downSpecialLoopCheckTimer.set(-1);
-}
+    function specialDown_resetTimer(){
+        self.removeTimer(downSpecialLoopCheckTimer.get());
+        downSpecialLoopCheckTimer.set(-1);
+    }
 
-function specialDown_checkLoop(){
-    var heldControls:ControlsObject = self.getHeldControls();
+    function specialDown_checkLoop(){
+        var heldControls:ControlsObject = self.getHeldControls();
 
-    if(!heldControls.SPECIAL){
+        if(!heldControls.SPECIAL){
+            specialDown_resetTimer();
+            specialDown_gotoEndlag();
+        }
+    }
+
+    function specialDown_gotoLoop(){
+        if(self.isOnFloor()){
+            self.playAnimation("special_down_loop");
+        } else {
+            self.playAnimation("special_down_air_loop");
+        }
+
+        //failsafe
         specialDown_resetTimer();
-        specialDown_gotoEndlag();
+
+        // start checking inputs
+        downSpecialLoopCheckTimer.set(self.addTimer(1, -1, specialDown_checkLoop));    
     }
-}
-
-function specialDown_gotoLoop(){
-    if(self.isOnFloor()){
-        self.playAnimation("special_down_loop");
-    } else {
-        self.playAnimation("special_down_air_loop");
-    }
-
-    //failsafe
-    specialDown_resetTimer();
-
-    // start checking inputs
-    downSpecialLoopCheckTimer.set(self.addTimer(1, -1, specialDown_checkLoop));    
-}
+// ===== End Down Special =====

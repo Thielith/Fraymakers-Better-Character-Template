@@ -23802,7 +23802,7 @@
     },
     {
       "$id": "76a989b0-90a5-435e-9120-97a672d171eb",
-      "code": "//adds event listener which runs a script that slows movement down if hitting a shield (this script can be managed in the character's Script.hx)\r\nself.addEventListener(GameObjectEvent.SHIELD_HIT_DEALT, sideSpecialShieldHit);",
+      "code": "//adds event listener which runs a script that slows movement down if hitting a shield (this script can be managed in the character's Script.hx)\r\nself.addEventListener(GameObjectEvent.SHIELD_HIT_DEALT, onSideSpecialShieldHit);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -25998,7 +25998,7 @@
     },
     {
       "$id": "ecce1034-1f4f-46bd-8dc6-6050ccc683eb",
-      "code": "//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {damage: 10, knockbackGrowth: 60, baseKnockback: 60, hitstop: -1, selfHitstop: -1, hitstun: -1, hitstopNudgeMultiplier:1, directionalInfluence: true, reversibleAngle:false, angle: 55, limb:AttackLimb.FIST });\r\n//updates the hitbox stats for hitbox1 (indicated by the 1 at the start of the parenthesis)\r\nself.updateHitboxStats(1, {damage: 10, knockbackGrowth: 60, baseKnockback: 60, hitstop: -1, selfHitstop: -1, hitstun: -1, hitstopNudgeMultiplier:1, directionalInfluence: true, reversibleAngle:false, angle: 55, limb:AttackLimb.FIST });\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();\r\n//adds event listener which runs a script that allows you to jump cancel the attack if the hit is successful (this script can be managed in the character's Script.hx)\r\nself.addEventListener(GameObjectEvent.HIT_DEALT, sideSpecialHit);",
+      "code": "//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {damage: 10, knockbackGrowth: 60, baseKnockback: 60, hitstop: -1, selfHitstop: -1, hitstun: -1, hitstopNudgeMultiplier:1, directionalInfluence: true, reversibleAngle:false, angle: 55, limb:AttackLimb.FIST });\r\n//updates the hitbox stats for hitbox1 (indicated by the 1 at the start of the parenthesis)\r\nself.updateHitboxStats(1, {damage: 10, knockbackGrowth: 60, baseKnockback: 60, hitstop: -1, selfHitstop: -1, hitstun: -1, hitstopNudgeMultiplier:1, directionalInfluence: true, reversibleAngle:false, angle: 55, limb:AttackLimb.FIST });\r\n//refreshes the hitboxes on the animation, allowing for multi-hit behavior\r\nself.reactivateHitboxes();\r\n//adds event listener which runs a script that allows you to jump cancel the attack if the hit is successful (this script can be managed in the character's Script.hx)\r\nself.addEventListener(GameObjectEvent.HIT_DEALT, onSideSpecialHit);",
       "length": 1,
       "pluginMetadata": {
       },
