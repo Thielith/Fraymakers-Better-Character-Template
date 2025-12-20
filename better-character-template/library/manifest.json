@@ -26,8 +26,8 @@
           "y_offset_door_ffa": 0
         },
         "hud":{
-          "animation":"hud",
-          "animation_front": "hud_front",
+          "animation":"hud_neutral",
+          "animation_front": "hud_neutral_front",
           "animation_happy":"hud_happy",
           "animation_happy_front":"hud_happy_front",
           "animation_sad":"hud_sad",
