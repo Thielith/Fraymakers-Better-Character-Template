@@ -27,12 +27,12 @@ function destroy() {
 
 function onGroundHit(event) {
 	Engine.log("hit ground");
-	die();
+	destroy();
 }
 
 function onHit(event) {
 	Engine.log("hit something");
-	die();
+	destroy();
 }
 
 function update() {
@@ -40,7 +40,7 @@ function update() {
 		life.dec();
 		if (life.get() <= 0) {
 			Engine.log("going to die now");
-			die();
+			destroy();
 		}
 	}
 } 
