@@ -1,9 +1,9 @@
 // API Script
 
 // Tracks active Neutral Special projectile (in case we need to handle any special cases)
-var neutralSpecialProjectile = self.makeObject(null); 
+var projectile = self.makeObject(null); 
 
-var lastDisabledNSpecStatusEffect = self.makeObject(null);
+var disableNSpecStatusEffect = self.makeObject(null);
 
 var downSpecialLoopCheckTimer = self.makeInt(-1);
 
@@ -104,18 +104,20 @@ function onTeardown() {
 
 // ===== End Clutch logic =====
 
-//-----------NEUTRAL SPECIAL-----------
+
+
+// ===== Neutral Special =====
 
 //projectile
-function fireNSpecialProjectile(){
-    neutralSpecialProjectile.set(
+function spawnAndFireProjectile(){
+    projectile.set(
         match.createProjectile(self.getResource().getContent("fraynkieProjectile"), self)
     );
     
-    neutralSpecialProjectile.get().setX(
+    projectile.get().setX(
         self.getX() + self.flipX(NSPEC_PROJ_X_OFFSET)
     );
-    neutralSpecialProjectile.get().setY(
+    projectile.get().setY(
         self.getY() + NSPEC_PROJ_Y_OFFSET
     );
 }
@@ -127,20 +129,25 @@ function startNeutralSpecialCooldown(){
 }
 
 function disableNeutralSpecial(){
-    if (lastDisabledNSpecStatusEffect.get() != null) {
-        self.removeStatusEffect(StatusEffectType.DISABLE_ACTION, lastDisabledNSpecStatusEffect.get().id);
+    if (disableNSpecStatusEffect.get() != null) {
+        // Engine.log("neutral special already disabled");
+        return;
     }
-    lastDisabledNSpecStatusEffect.set(self.addStatusEffect(StatusEffectType.DISABLE_ACTION, CharacterActions.SPECIAL_NEUTRAL));
+
+    disableNSpecStatusEffect.set(self.addStatusEffect(StatusEffectType.DISABLE_ACTION, CharacterActions.SPECIAL_NEUTRAL));
 }
 
 function enableNeutralSpecial(){
-    if (lastDisabledNSpecStatusEffect.get() != null) {
-        self.removeStatusEffect(StatusEffectType.DISABLE_ACTION, lastDisabledNSpecStatusEffect.get().id);
-        lastDisabledNSpecStatusEffect.set(null);
+    if (disableNSpecStatusEffect.get() == null) {
+        // Engine.log("neutral special already enabled.");
+        return;
     }
+
+    self.removeStatusEffect(StatusEffectType.DISABLE_ACTION, disableNSpecStatusEffect.get().id);
+    disableNSpecStatusEffect.set(null);
 }
 
-//-----------SIDE SPECIAL-----------
+// ===== Side Special =====
 
 //shield hit slowdown 
 function sideSpecialShieldHit(){
@@ -152,7 +159,7 @@ function sideSpecialHit(){
 	self.updateAnimationStats({allowJump: true});
 }
 
-//-----------DOWN SPECIAL-----------
+// ===== Down Special =====
 
 function specialDown_gotoEndlag(){
     if(self.isOnFloor()){

@@ -38882,7 +38882,7 @@
     },
     {
       "$id": "2464e4a0-7f03-455f-a844-803d7baaccb3",
-      "code": "//script which tells the character to launch the projectile. The projectile's x and y offset are configured in the character Script.hx, and the projectile's speed and other functionality can be configured in the projectile's Script.hx. \r\nfireNSpecialProjectile();\r\n//script which starts a cooldown timer before you can use the neutral special again. This can be configured in the character Script.hx.\r\nstartNeutralSpecialCooldown();\r\n//plays light dust effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_START_LIGHT}), self);",
+      "code": "//script which tells the character to launch the projectile. The projectile's x and y offset are configured in the character Script.hx, and the projectile's speed and other functionality can be configured in the projectile's Script.hx. \r\nspawnAndFireProjectile();\r\n//script which starts a cooldown timer before you can use the neutral special again. This can be configured in the character Script.hx.\r\nstartNeutralSpecialCooldown();\r\n//plays light dust effect\r\nmatch.createVfx(new VfxStats({spriteContent: \"global::vfx.vfx\", animation: GlobalVfx.DUST_START_LIGHT}), self);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39056,7 +39056,7 @@
     },
     {
       "$id": "1e3648d4-b18f-4b93-96ee-c6012ee057dd",
-      "code": "//script which tells the character to launch the projectile. The projectile's x and y offset are configured in the character Script.hx, and the projectile's speed and other functionality can be configured in the projectile's Script.hx. \r\nfireNSpecialProjectile();\r\n//script which starts a cooldown timer before you can use the neutral special again. This can be configured in the character Script.hx.\r\nstartNeutralSpecialCooldown();",
+      "code": "//script which tells the character to launch the projectile. The projectile's x and y offset are configured in the character Script.hx, and the projectile's speed and other functionality can be configured in the projectile's Script.hx. \r\nspawnAndFireProjectile();\r\n//script which starts a cooldown timer before you can use the neutral special again. This can be configured in the character Script.hx.\r\nstartNeutralSpecialCooldown();",
       "length": 1,
       "pluginMetadata": {
       },

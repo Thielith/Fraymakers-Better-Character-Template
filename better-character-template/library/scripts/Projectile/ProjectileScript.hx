@@ -21,17 +21,17 @@ function initialize() {
 }
 
 function destroy() {
-	Engine.log("destroy!");
+	// Engine.log("destroy!");
 	self.toState(PState.DESTROYING);
 }
 
 function onGroundHit(event) {
-	Engine.log("hit ground");
+	// Engine.log("hit ground");
 	destroy();
 }
 
 function onHit(event) {
-	Engine.log("hit something");
+	// Engine.log("hit something");
 	destroy();
 }
 
@@ -39,14 +39,14 @@ function update() {
 	if (self.inState(PState.ACTIVE)) {
 		life.dec();
 		if (life.get() <= 0) {
-			Engine.log("going to die now");
+			// Engine.log("going to die now");
 			destroy();
 		}
 	}
 } 
 
 function onTeardown() {
-	Engine.log("tearing down");
+	// Engine.log("tearing down");
 	self.removeEventListener(EntityEvent.COLLIDE_FLOOR, onGroundHit);
 	self.removeEventListener(GameObjectEvent.HIT_DEALT, onHit);
 }
