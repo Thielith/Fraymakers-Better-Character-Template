@@ -1,8 +1,5 @@
 // Animation stats for Character Template Projectile
 {
-	spawn: {
-		endType: AnimationEndType.NONE
-	},
 	idle: {
 		endType: AnimationEndType.NONE
 	},
@@ -11,6 +8,6 @@
 	// To avoid this, we set "resetId" to false
 	destroy: {
 		xSpeedConservation: 0, ySpeedConservation: 0,
-		resetId:false
+		resetId: false
 	}
 }

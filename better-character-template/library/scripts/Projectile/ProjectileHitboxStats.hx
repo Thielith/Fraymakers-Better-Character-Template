@@ -1,6 +1,5 @@
 // Hitbox stats for Character Template Projectile
 {
-	spawn: {},
 	idle: {
 		hitbox0: {
 			damage: 6,

@@ -7,13 +7,13 @@
 	// Note: Currently scale adjustments invalidate SpecialAngle AUTOLINK_STRONGER and AUTOLINK_STRONGEST for values other than 1.0. 
 	baseScaleX: 1.0,
 	baseScaleY: 1.0, 
-	weight: 100,
+	weight: 80,
 	gravity: 0.8,
 	shortHopSpeed: 8.25,
 	jumpSpeed: 15,
-	//For multiple jumps define subsequent jump speeds within the brackets with commas in between (for example: [15.5, 13, 10]).
 	jumpSpeedBackwardInitialXSpeed: -3,
 	jumpSpeedForwardInitialXSpeed: 3,
+	// For multiple jumps define subsequent jump speeds within the brackets with commas in between (for example: [15.5, 13, 10]).
 	doubleJumpSpeeds: [15.5],
 	terminalVelocity: 9.25,
 	fastFallSpeed: 13.75,
@@ -21,21 +21,17 @@
 	walkSpeedInitial: 1.0,
 	walkSpeedAcceleration: 0.3,
 	walkSpeedCap: 3.25,
-	dashSpeed: 9.5,
-	runSpeedInitial: 4.75,
-	runSpeedAcceleration: 0.55,
-	runSpeedCap: 7.5,
+	dashSpeed: 9,
+	runSpeedInitial: 4.5,
+	runSpeedAcceleration: 0.5,
+	runSpeedCap: 7,
 	groundSpeedAcceleration: 0.3,
 	groundSpeedCap: 11,
 	aerialSpeedAcceleration: 0.45,
 	aerialSpeedCap: 6.5,
-	aerialFriction: 0.22,
-
-	wallJumpXSpeed: 8.5,
-	wallJumpYSpeed: 14,
-	wallJumpLimit:1,
+	aerialFriction: 0.2,
 	
-	//ENVIRONMENTAL COLLISION BODY (ECB) STATS
+	// ENVIRONMENTAL COLLISION BODY (ECB) STATS
 	floorHeadPosition: 86,
 	floorHipWidth: 29,
 	floorHipXOffset: 0,
@@ -47,13 +43,13 @@
 	aerialHipYOffset: 0,
 	aerialFootPosition: 25,
 
-	//CAMERA BOX STATS
+	// CAMERA BOX STATS
 	cameraBoxOffsetX: 25,
 	cameraBoxOffsetY: 75,
 	cameraBoxWidth: 200,
 	cameraBoxHeight: 250,
 
-	//ROLL AND LEDGE JUMP STATS
+	// ROLL AND LEDGE JUMP STATS
 	techRollSpeed: 18,
 	techRollSpeedStartFrame: 7,
 	techRollSpeedLength: 1,
@@ -70,17 +66,26 @@
 	ledgeJumpYSpeed: -10,
 
 	//AIRDASH STATS
+	airdashLimit: 1,
+	airdashStartupLength: 3,
 	airdashInitialSpeed: 11,
-	airdashSpeedCap: 12.5,
 	airdashAccelMultiplier: 0.4,
+	airdashSpeedCap: 12.5,
+	airdashFullspeedLength: 2,
 	airdashCancelSpeedConservation: 0.9,
+	airdashEndlagLength: 6,
+	airdashEndlagSpeed: 2,
+	airdashCameraShakeIntensity: 0,
+	airdashEffectOffsetX: 0,
+	airdashEffectOffsetY: 0,
+	airdashEffectRadius: 10,
 
-	//BURY VISUAL STATS
+	// BURY VISUAL STATS
 	buryAnimation: "hurt_thrown",
 	buryFrame: 13,
 	buryOffsetY: -10,
 
-	//SHIELD STATS
+	// SHIELD STATS
 	//How many pixels behind 0,0 you'd like to extend shield coverage.
 	shieldCrossupThreshold: 16,	
 	//This dictates the *visual* size of the shield, which doesn't correlate to the actual shieldable area. HIGHLY recommend adjusting the "front" and "back" number sets together (for example, subtracting/adding to both "shieldBackWidth" and "shieldFrontWidth" by the same amount at the same time), it's currently really easy to lose track of the sizing and positioning if you aren't careful. 
@@ -95,14 +100,14 @@
 	shieldBackWidth: 49,
 	shieldBackHeight: 93,
 
-	//VOICE STATS
-	//Populate the brackets with IDs in parenthesis separated by commas to add them to the voice bank.
+	// VOICE STATS
+	// Populate the brackets with IDs in parenthesis separated by commas to add them to the voice bank.
 	attackVoiceIds: ["attack1", "attack2", "attack3", "attack4", "attack5", "attack6", "attack7"],
 	hurtLightVoiceIds: [],
 	hurtMediumVoiceIds: ["hurt1", "hurt2", "hurt3", "hurt6", "hurt7"],
 	hurtHeavyVoiceIds: ["hurt5"],
 	koVoiceIds: ["hurt4"],
-	//Percentage chance for the voice lines to play (1 being never, 0 being always).
+	// Percentage chance for the voice lines to play (1 being never, 0 being always).
 	attackVoiceSilenceRate: 0.5,
 	hurtLightSilenceRate: 1,
 	hurtMediumSilenceRate: 0.5,

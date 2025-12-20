@@ -3,9 +3,9 @@
     {
       "$id": "9639a882-3c8f-4400-93ca-e53fea62e79f",
       "layers": [
-        "9e236913-109d-4351-8140-f0cbec133f9a",
         "e0276f45-c489-4185-8312-1aad404d8086",
         "36e814dd-35f5-4178-917f-4eaca11160f6",
+        "9e236913-109d-4351-8140-f0cbec133f9a",
         "10a77e51-5c95-45ff-886d-6c914c9dcc34"
       ],
       "name": "revival",
@@ -45,6 +45,16 @@
         "14ae604a-1b52-4357-bef2-0630f739c831"
       ],
       "name": "stand_turn",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "ad1ed65e-ae6a-4e07-9061-30b5985142f4",
+      "layers": [
+        "2a2857f9-724e-4dbe-8243-7bc8b69cf9d1",
+        "a3d5d46c-4eef-4a7f-b955-22924586608b"
+      ],
+      "name": "----- Ground Movement -----",
       "pluginMetadata": {
       }
     },
@@ -129,6 +139,16 @@
         "c2f43b4f-9ef8-44e3-93d3-c5034dc3f298"
       ],
       "name": "skid",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "11d4ed6c-7073-4787-b945-37c6bd64192b",
+      "layers": [
+        "3f49da30-69c6-469c-bd57-4845aeef4148",
+        "bdab3182-dbdd-4bf7-a7ab-a9135b191579"
+      ],
+      "name": "----- Jump and Fall -----",
       "pluginMetadata": {
       }
     },
@@ -223,6 +243,19 @@
       }
     },
     {
+      "$id": "b1489408-a481-4e2a-b51e-322354e83072",
+      "layers": [
+        "4d4a7c6b-2528-448c-a010-0eab32006c91",
+        "92e82ed3-db75-4a70-b2ce-393383012473",
+        "5f73598b-326f-4036-9c24-e0b0a4bc98e9",
+        "16c3fccf-7831-4d5d-bf0a-30a7d03f5a6d",
+        "ff602ca3-b9d0-4cd1-9ecd-a99d3ff9bcb3"
+      ],
+      "name": "fall_special",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "82ad5c85-7d8d-42d0-97b7-78bcaa1e219d",
       "layers": [
         "bfdfbae1-5d4c-4ae7-81c0-bc4fd69e5a0d",
@@ -231,6 +264,18 @@
         "aaa86c7b-a139-4918-a64b-3d850b0313a3"
       ],
       "name": "land_light",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "819d30c4-0bc2-45f6-a844-3e4e099b76b3",
+      "layers": [
+        "594460d5-4619-4aee-96eb-a55354da2794",
+        "468dbeaf-6cfa-4669-8910-093fc228ef38",
+        "0df9e778-971a-4215-b44e-a290b2080319",
+        "09f384b9-35a9-4d51-89af-96e9056ecbed"
+      ],
+      "name": "land_heavy",
       "pluginMetadata": {
       }
     },
@@ -259,27 +304,12 @@
       }
     },
     {
-      "$id": "b1489408-a481-4e2a-b51e-322354e83072",
+      "$id": "54fa9373-0145-497b-b522-eb45f664cb89",
       "layers": [
-        "4d4a7c6b-2528-448c-a010-0eab32006c91",
-        "92e82ed3-db75-4a70-b2ce-393383012473",
-        "5f73598b-326f-4036-9c24-e0b0a4bc98e9",
-        "16c3fccf-7831-4d5d-bf0a-30a7d03f5a6d",
-        "ff602ca3-b9d0-4cd1-9ecd-a99d3ff9bcb3"
+        "3100bbed-6fef-41eb-81c4-a328ef40d40f",
+        "ff1fd964-6d3c-4236-ba47-21d502042353"
       ],
-      "name": "fall_special",
-      "pluginMetadata": {
-      }
-    },
-    {
-      "$id": "819d30c4-0bc2-45f6-a844-3e4e099b76b3",
-      "layers": [
-        "594460d5-4619-4aee-96eb-a55354da2794",
-        "468dbeaf-6cfa-4669-8910-093fc228ef38",
-        "0df9e778-971a-4215-b44e-a290b2080319",
-        "09f384b9-35a9-4d51-89af-96e9056ecbed"
-      ],
-      "name": "land_heavy",
+      "name": "----- Crouching -----",
       "pluginMetadata": {
       }
     },
@@ -450,6 +480,16 @@
       }
     },
     {
+      "$id": "0c78f597-7312-4871-ad6b-30adbc2c1e69",
+      "layers": [
+        "6cf25738-e445-4041-9da0-2554aa64d1e3",
+        "9442f289-c349-4750-99ed-d21f752b9721"
+      ],
+      "name": "----- Defense -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "bb37bae0-b6ea-4f5a-83c8-2f528628f705",
       "layers": [
         "402b9f78-bff2-4729-b30a-19765365c089",
@@ -527,26 +567,55 @@
       }
     },
     {
-      "$id": "05ac23b3-ad12-496d-bf30-2d69cbe00d66",
+      "$id": "e3c16763-4424-4d43-b0ec-a0e7f7ca8110",
       "layers": [
-        "a6d1e5e4-cbb2-41b4-bce3-6b086372cfde",
-        "83ef316b-e31f-4ffe-9c5b-5ebefcd54fe4",
-        "64a67516-6133-4d5f-a312-6be7dec09f25",
-        "937d8f21-43fa-4a0d-a26d-3fb680e75bd4"
+        "20a2d6ce-e321-49d8-8cce-c5c908f23e7f",
+        "ed046643-7c8e-4e96-8f69-bfd290c29b0a",
+        "c27abe3c-20d6-4028-ba34-e32ca8ccb0a1",
+        "687fc5a1-0cf6-43cb-b634-b5ccda6ac309",
+        "aad22329-da2e-459f-b028-4afad84b57ee",
+        "23f424ac-17e5-45ba-a663-7bc47a2b105f",
+        "8013939d-2e39-4cf0-95dc-c8af46fbcab0",
+        "ecd30a71-258f-4179-92ed-7c55834f57f8"
       ],
-      "name": "tech",
+      "name": "parry_in",
       "pluginMetadata": {
       }
     },
     {
-      "$id": "bd4e33fb-a3ce-4954-98f7-71a453af00e6",
+      "$id": "537a4302-d16b-4a0c-8917-3993d60e35a7",
       "layers": [
-        "fe3c3300-9d58-4268-ba92-b907190559ca",
-        "a902d6ce-0714-48b9-90e3-12225534fa7c",
-        "9498e160-aa6b-474d-b07a-9763c5f62d96",
-        "8fd57ca0-b787-4cef-b863-e3248dd36dc6"
+        "7b4f9efd-ca4a-4eef-933e-b1d7aa5c4a96",
+        "a452114d-b325-4c04-a62b-25ccb018fa40",
+        "08a32982-9672-4648-90cf-a374180a55c0",
+        "7530fec8-8515-40ca-a0b5-e8cb354d44a7",
+        "95faa467-458b-4f24-aae5-a754ca466ff9"
       ],
-      "name": "tech_roll",
+      "name": "parry_fail",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "ab5972c8-e17c-4a35-ab6d-350374d0eb10",
+      "layers": [
+        "bd0ee1af-5539-4920-b4ba-76f20a0d197f",
+        "a0368196-3627-4027-9d98-0fdb5af84175",
+        "a4aabc06-1951-4677-b7a4-f46227cbf4e7",
+        "a5f21472-c391-4b68-bb39-7094ef43494b",
+        "186fd64f-8b6a-48c4-b300-2cd6f02108fc",
+        "a3bc7bb7-114a-4c38-a529-675fe27048ed"
+      ],
+      "name": "parry_success",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "29485ab4-2472-4805-91ff-5fdbc5b29626",
+      "layers": [
+        "cbb85a82-2bb3-4251-adc7-aec7bcfbee01",
+        "5c964987-823e-4691-b352-900409d6136d"
+      ],
+      "name": "----- Hurt and Crash -----",
       "pluginMetadata": {
       }
     },
@@ -702,6 +771,40 @@
         "b0689bb0-2f3e-4d0f-bdee-59e44ad0a84e"
       ],
       "name": "crash_attack",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "05ac23b3-ad12-496d-bf30-2d69cbe00d66",
+      "layers": [
+        "a6d1e5e4-cbb2-41b4-bce3-6b086372cfde",
+        "83ef316b-e31f-4ffe-9c5b-5ebefcd54fe4",
+        "64a67516-6133-4d5f-a312-6be7dec09f25",
+        "937d8f21-43fa-4a0d-a26d-3fb680e75bd4"
+      ],
+      "name": "tech",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "bd4e33fb-a3ce-4954-98f7-71a453af00e6",
+      "layers": [
+        "fe3c3300-9d58-4268-ba92-b907190559ca",
+        "a902d6ce-0714-48b9-90e3-12225534fa7c",
+        "9498e160-aa6b-474d-b07a-9763c5f62d96",
+        "8fd57ca0-b787-4cef-b863-e3248dd36dc6"
+      ],
+      "name": "tech_roll",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "bfcb40c9-425e-4384-988d-b0a9ff18a4e3",
+      "layers": [
+        "91344dd9-1c59-4728-95fb-612237694326",
+        "5b8028d8-3931-40dc-b801-58346098b709"
+      ],
+      "name": "----- Airdashes -----",
       "pluginMetadata": {
       }
     },
@@ -864,6 +967,16 @@
       }
     },
     {
+      "$id": "705f9d22-b7c7-48cc-a2b2-df9191bcb52f",
+      "layers": [
+        "4806c26c-8fc5-4323-ac7f-26b013a98254",
+        "eba1ab1c-b172-41bd-8f69-13ae8f5286e3"
+      ],
+      "name": "----- Aerials -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "4f510904-f136-4fc0-ab55-8048f0fc2878",
       "layers": [
         "4befcf39-821e-45e5-afbb-9a7f370d6c67",
@@ -1019,6 +1132,16 @@
       }
     },
     {
+      "$id": "71f32c36-a354-4315-a95b-1ef87381ca1e",
+      "layers": [
+        "2e4c3cb4-1bc1-46ac-a244-ffa965a26d99",
+        "171ac720-ccfd-4215-987a-83b7a66f1344"
+      ],
+      "name": "----- Grounded Normals -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "7119b263-b76d-4db2-8282-2367962a6276",
       "layers": [
         "1bf8d96f-8500-4841-bef0-eb5a83af74ec",
@@ -1122,45 +1245,12 @@
       }
     },
     {
-      "$id": "e3c16763-4424-4d43-b0ec-a0e7f7ca8110",
+      "$id": "40f04264-e041-4db5-b0af-ea5a80f544f1",
       "layers": [
-        "20a2d6ce-e321-49d8-8cce-c5c908f23e7f",
-        "ed046643-7c8e-4e96-8f69-bfd290c29b0a",
-        "c27abe3c-20d6-4028-ba34-e32ca8ccb0a1",
-        "687fc5a1-0cf6-43cb-b634-b5ccda6ac309",
-        "aad22329-da2e-459f-b028-4afad84b57ee",
-        "23f424ac-17e5-45ba-a663-7bc47a2b105f",
-        "8013939d-2e39-4cf0-95dc-c8af46fbcab0",
-        "ecd30a71-258f-4179-92ed-7c55834f57f8"
+        "38fb712c-3041-49f6-b3c6-11d44c7cd565",
+        "20b4c57e-b16b-4ebe-b614-b2a7ea7ffe08"
       ],
-      "name": "parry_in",
-      "pluginMetadata": {
-      }
-    },
-    {
-      "$id": "537a4302-d16b-4a0c-8917-3993d60e35a7",
-      "layers": [
-        "7b4f9efd-ca4a-4eef-933e-b1d7aa5c4a96",
-        "a452114d-b325-4c04-a62b-25ccb018fa40",
-        "08a32982-9672-4648-90cf-a374180a55c0",
-        "7530fec8-8515-40ca-a0b5-e8cb354d44a7",
-        "95faa467-458b-4f24-aae5-a754ca466ff9"
-      ],
-      "name": "parry_fail",
-      "pluginMetadata": {
-      }
-    },
-    {
-      "$id": "ab5972c8-e17c-4a35-ab6d-350374d0eb10",
-      "layers": [
-        "bd0ee1af-5539-4920-b4ba-76f20a0d197f",
-        "a0368196-3627-4027-9d98-0fdb5af84175",
-        "a4aabc06-1951-4677-b7a4-f46227cbf4e7",
-        "a5f21472-c391-4b68-bb39-7094ef43494b",
-        "186fd64f-8b6a-48c4-b300-2cd6f02108fc",
-        "a3bc7bb7-114a-4c38-a529-675fe27048ed"
-      ],
-      "name": "parry_success",
+      "name": "----- Strongs -----",
       "pluginMetadata": {
       }
     },
@@ -1285,6 +1375,16 @@
       }
     },
     {
+      "$id": "b04101f6-24cc-4e8d-a9a8-988c8edf4f23",
+      "layers": [
+        "3d5a459a-a1fb-4b6b-a439-d13e3ba32e8c",
+        "f9e0b065-c929-4923-a2a3-3d181262eb90"
+      ],
+      "name": "----- Assist -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "4fb1f2e9-af42-4e14-9cd2-a44d9c398875",
       "layers": [
         "8940fee8-80ac-43ce-b763-55a36847c83d",
@@ -1307,6 +1407,16 @@
         "b418961e-9558-44be-8412-ffc66b8143a7"
       ],
       "name": "assist_call_air",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "086912bc-be18-453a-af11-545b6c56215e",
+      "layers": [
+        "681734c7-8a6f-4eb0-b3a6-640d997a7552",
+        "fcce71ff-d964-4af9-9b92-1a9141a82e08"
+      ],
+      "name": "----- Specials -----",
       "pluginMetadata": {
       }
     },
@@ -1441,6 +1551,16 @@
       }
     },
     {
+      "$id": "5be90cd1-63ec-4c9f-b144-64fe4c538c24",
+      "layers": [
+        "8b762402-f72f-4dae-8c85-c610afa18b56",
+        "a7872fa6-99b1-4e3e-bbe3-bb86206a490a"
+      ],
+      "name": "----- Grabs -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "1b5e9188-addb-4275-b8a9-4d7f037d28e7",
       "layers": [
         "40fe4763-0a35-492c-ab3b-ef2cae966f38",
@@ -1524,6 +1644,16 @@
         "d050ee94-1f13-43d0-a172-aa11f0a5a484"
       ],
       "name": "throw_down",
+      "pluginMetadata": {
+      }
+    },
+    {
+      "$id": "b37a034a-32a9-43c0-89f5-e5f5d0bfde65",
+      "layers": [
+        "a313f8f6-fb2f-413e-942c-6033a2b221c4",
+        "9652284e-fe44-44a6-8477-2cc9c836f93e"
+      ],
+      "name": "----- Misc -----",
       "pluginMetadata": {
       }
     },
@@ -2010,7 +2140,7 @@
     },
     {
       "$id": "9fd497b9-846f-4202-9e6d-030b117be4a1",
-      "code": "//gives the character a speed boost forward (to set backward speed put a negative number in the setXSpeed parenthesis)\r\nself.setXSpeed(DASH_ATK_BOOST_X.get());",
+      "code": "//gives the character a speed boost forward (to set backward speed put a negative number in the setXSpeed parenthesis)\r\nself.setXSpeed(DASH_ATK_BOOST_X);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -2256,7 +2386,7 @@
     },
     {
       "$id": "9990ef50-e834-42b9-96e8-39bef2b0bcfe",
-      "code": "//blink 1\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_ONE.get()){ \r\n  self.playFrame(1);\r\n}",
+      "code": "//blink 1\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_ONE){ \r\n  self.playFrame(1);\r\n}",
       "length": 1,
       "pluginMetadata": {
       },
@@ -6424,7 +6554,7 @@
     },
     {
       "$id": "9d7f8c68-2402-4cd6-bbfe-bcb86a4ddaa4",
-      "code": "//blink 2\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_TWO.get()){ \r\n  self.playFrame(1);\r\n}\r\n",
+      "code": "//blink 2\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_TWO){ \r\n  self.playFrame(1);\r\n}\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -12928,7 +13058,7 @@
     },
     {
       "$id": "d0badb76-dabd-4cdc-aa10-b32e68267a98",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(DOWN_TILT_BOOST_X.get());\r\n",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(DOWN_TILT_BOOST_X);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -13052,7 +13182,7 @@
     },
     {
       "$id": "008d0b10-382f-45d6-80d4-7ee5d15d666d",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "00e25464-e838-48d3-a18d-2a6c1d93a12c",
@@ -13062,7 +13192,7 @@
     },
     {
       "$id": "b5470ce5-8775-4db0-9746-8d7b96a8f1d3",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "6409ddd2-12c4-4ac2-a8e0-812192727bf0",
@@ -13072,7 +13202,7 @@
     },
     {
       "$id": "90fcca15-fea9-4771-8598-f9868ee92b9b",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "155ab8d6-1492-4e7a-bfe1-bf2c7bde29c2",
@@ -13092,7 +13222,7 @@
     },
     {
       "$id": "b0154d74-898b-4a48-acdd-37a8d53a0293",
-      "length": 4,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -13112,7 +13242,7 @@
     },
     {
       "$id": "c3da4bfd-4ca0-4651-a68e-903571e164c7",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "fb22a7d2-be0d-4e70-b4f9-2d6f50894146",
@@ -13343,7 +13473,7 @@
     {
       "$id": "0649c393-2d2c-4b39-a1ce-81a0d7a5e158",
       "code": "",
-      "length": 2,
+      "length": 4,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -13366,7 +13496,7 @@
     },
     {
       "$id": "5a6a3207-1b69-426d-a184-062cf23b198f",
-      "length": 4,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14130,7 +14260,7 @@
     },
     {
       "$id": "221b129d-8add-4f7b-ac93-80379de39748",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "7eb4f4fb-c502-4c7b-a8a5-5cc1b404a634",
@@ -14160,7 +14290,7 @@
     },
     {
       "$id": "192f8fc9-7004-4ddf-a49e-c2a6645e4e56",
-      "length": 11,
+      "length": 14,
       "pluginMetadata": {
       },
       "symbol": "91452e86-6394-4f56-b5cd-27f518a90abf",
@@ -14170,7 +14300,7 @@
     },
     {
       "$id": "12317505-3dac-4de8-b229-bd1ecabc9369",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "11901189-bd38-422e-9b96-b772bf7c89db",
@@ -14180,7 +14310,7 @@
     },
     {
       "$id": "edf31bce-a9ac-42b7-a770-ac7cfc73b15b",
-      "length": 18,
+      "length": 22,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14190,7 +14320,7 @@
     },
     {
       "$id": "17842be2-15a7-4209-9c4a-871689e98f57",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "fb8e9daf-0660-4a33-8dfe-ec403a286184",
@@ -14200,7 +14330,7 @@
     },
     {
       "$id": "971e9b55-b0a1-40f6-bc78-eb79b17956ae",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "b0e8af4e-6131-4186-9527-d701cb910397",
@@ -14210,7 +14340,7 @@
     },
     {
       "$id": "2ee6abc2-720c-4499-b55d-036de0643ea0",
-      "length": 1,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14220,7 +14350,7 @@
     },
     {
       "$id": "8002ad0a-19db-43cb-ab32-4928d0c4c4af",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "f2a0fd89-87c7-49f4-b703-2ad129a9702f",
@@ -14260,7 +14390,7 @@
     },
     {
       "$id": "6a8d61af-219b-49f1-8e38-2149f1c3fb01",
-      "length": 10,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": "38be2ffb-d989-4235-afeb-e77aeb092afc",
@@ -14270,7 +14400,7 @@
     },
     {
       "$id": "051cbf24-0486-4f7b-ad56-16a0326679c2",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "f37c9515-9ee8-4f65-b313-e605edb54e14",
@@ -14280,7 +14410,7 @@
     },
     {
       "$id": "b0154e43-d23c-406c-ac2a-15c09db1c412",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "7e7ec880-341c-47e9-9821-e07482cdee29",
@@ -14290,7 +14420,7 @@
     },
     {
       "$id": "10e8c511-57f0-4ed1-9c1e-8648d1e97dd9",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14320,7 +14450,7 @@
     },
     {
       "$id": "77a4e320-0ee5-4834-a5e9-928c780ff6df",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14350,7 +14480,7 @@
     },
     {
       "$id": "fff33b57-4530-44f0-b85f-ef7ce8c5ef2f",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14380,7 +14510,7 @@
     },
     {
       "$id": "2d4b0345-dc70-4212-b401-190dba0fc334",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "db1dc36a-9a22-465c-bdeb-cbdcab0075cf",
@@ -14390,7 +14520,7 @@
     },
     {
       "$id": "48f03673-426e-472f-a6c3-dfe1c1ac9ca1",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "f4843b9c-c58e-407c-b153-833e5dc25f6a",
@@ -14400,7 +14530,7 @@
     },
     {
       "$id": "0bce5bd6-fbf8-4af1-a4ae-a1b30ab234be",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "aece90fc-1b1f-4580-8116-877e73ed407b",
@@ -14500,7 +14630,7 @@
     },
     {
       "$id": "435774aa-0d43-49cd-a2b6-83671bbf8e5c",
-      "length": 6,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14510,7 +14640,7 @@
     },
     {
       "$id": "9c49d378-c75b-46e3-8ab0-4c28eaeba340",
-      "length": 6,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14520,7 +14650,7 @@
     },
     {
       "$id": "073f6fbc-7e5b-4dc0-8a6c-6daa207baf9f",
-      "length": 6,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14530,7 +14660,7 @@
     },
     {
       "$id": "6f312bb7-07c9-4a38-a207-66329ea21038",
-      "length": 6,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14560,7 +14690,7 @@
     },
     {
       "$id": "ebfa4b8a-fa6d-44e4-b368-8981590e3652",
-      "length": 13,
+      "length": 23,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14590,7 +14720,7 @@
     },
     {
       "$id": "c36d6774-a67c-4c87-80df-386f2bf3bbc4",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "35555318-b3ec-4471-a64a-5f44e5caf573",
@@ -14600,7 +14730,7 @@
     },
     {
       "$id": "cac1a354-e818-421b-90a3-3731023ad8f7",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "2a671d7b-c877-4f7f-ab9a-cdcc58f81d08",
@@ -14630,7 +14760,7 @@
     },
     {
       "$id": "859e0ee1-1b23-45f9-82b2-2ef93a5f5371",
-      "length": 9,
+      "length": 11,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14681,14 +14811,14 @@
     {
       "$id": "626acbfd-c3e3-4218-b57c-ebe614b325d3",
       "code": "",
-      "length": 4,
+      "length": 6,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
     },
     {
       "$id": "af412eda-c5c7-40f7-aa58-98d688d96f84",
-      "code": "//script which tells the character to go to the land animation designated in the AnimationStats.hx for this attack if you land during it.\r\nCommon.setAutocancel(false);\r\n//gives the character a speed boost forward and down (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a negative number in the setYSpeed parenthesis)\r\nself.setXSpeed(DOWN_AIR_SPEED_X.get());\r\nself.setYSpeed(DOWN_AIR_SPEED_Y.get());",
+      "code": "//script which tells the character to go to the land animation designated in the AnimationStats.hx for this attack if you land during it.\r\nCommon.setAutocancel(false);\r\n//gives the character a speed boost forward and down (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a negative number in the setYSpeed parenthesis)\r\nself.setXSpeed(DOWN_AIR_SPEED_X);\r\nself.setYSpeed(DOWN_AIR_SPEED_Y);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -14704,7 +14834,7 @@
     },
     {
       "$id": "8df9ec46-4a9e-4cf2-906e-24edf91071ae",
-      "length": 9,
+      "length": 11,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14724,7 +14854,7 @@
     },
     {
       "$id": "3dedef1b-aed3-4b65-a1f6-65de491b4297",
-      "length": 9,
+      "length": 11,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -14876,7 +15006,7 @@
     },
     {
       "$id": "00482412-e91f-43cf-91b4-15b34b2d0505",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "9cfaa5f5-d1a5-484f-a9ce-23fa1f7bb9ee",
@@ -14886,7 +15016,7 @@
     },
     {
       "$id": "146871b6-6676-4cf5-85db-a0e64cc06546",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "81aca8a8-7849-4312-aa50-2708b5c3265a",
@@ -14976,7 +15106,7 @@
     },
     {
       "$id": "58288f0d-cef5-4399-89f3-2e8facc9cd0e",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "7f93bd34-ac7f-47ae-ab08-d24ff56f82b5",
@@ -14986,7 +15116,7 @@
     },
     {
       "$id": "77ae25b5-0a9d-4d91-82f8-7a3be6c614d2",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "d2ec7360-e706-457b-873e-67b6ccf7df56",
@@ -15006,7 +15136,7 @@
     },
     {
       "$id": "41fa5712-140b-4180-8f87-f4a32f39da01",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "f253a9e8-691d-45ef-89b8-49aef426ee18",
@@ -15016,7 +15146,7 @@
     },
     {
       "$id": "3ee448f7-f229-4eb9-8d43-dc34c4c8f06f",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "8b9b4344-2a33-4c85-8aec-c68e5249c26e",
@@ -15036,7 +15166,7 @@
     },
     {
       "$id": "dfb2a158-50e0-48d2-9844-284c945edb06",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "0c219f52-518e-47d1-b43f-cf96190bd4b0",
@@ -15046,7 +15176,7 @@
     },
     {
       "$id": "47e8c684-ae45-45e6-a9a8-50cd2586f673",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "a75ec092-3909-425f-a74a-89ca7daae821",
@@ -15056,7 +15186,7 @@
     },
     {
       "$id": "d6128497-8fb6-449b-9235-f7768973b39c",
-      "length": 4,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": "aa40b403-0873-400b-b71f-0d5a8edbb2b9",
@@ -15066,7 +15196,7 @@
     },
     {
       "$id": "35bdc982-72ba-4a74-9cca-3a6b09ea561f",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "b08bea6b-ec4e-4c6a-8ed8-137880fe0db9",
@@ -15076,7 +15206,7 @@
     },
     {
       "$id": "fece5bc2-66e6-4b03-bee6-27cce3ac6a8e",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "52116883-db19-4b44-a4d0-957c56e3e681",
@@ -15086,7 +15216,7 @@
     },
     {
       "$id": "88cc736a-dc28-4d3f-b235-db4e0f204d11",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "e91e922a-ec65-4ccf-b567-271860504bec",
@@ -15096,7 +15226,7 @@
     },
     {
       "$id": "b3f90c46-5113-431a-9d10-f9cdebec8a14",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "11b579d7-c21c-4ea2-8713-92335f65b8dd",
@@ -15106,7 +15236,7 @@
     },
     {
       "$id": "6e05ca8d-a7f1-434b-b340-9d2b451ca70c",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "63e784f2-6f6d-4f46-800a-9c4bb47c01cb",
@@ -15116,7 +15246,7 @@
     },
     {
       "$id": "6f79ab81-ff26-4351-9f8e-31a419b158b5",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "db6262ac-7f41-4ca2-a9ba-ab017fa69d2b",
@@ -15126,7 +15256,7 @@
     },
     {
       "$id": "5b3ca399-200a-4c75-bb60-d6be6f2760db",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "3a619797-ce7d-4d4f-a466-587da974a5fd",
@@ -15136,7 +15266,7 @@
     },
     {
       "$id": "b7c7f694-e656-4ac2-b7a9-2cb3737b2a8d",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "c721ad24-0107-4bee-bb08-3cfdb09574a7",
@@ -15146,7 +15276,7 @@
     },
     {
       "$id": "57509507-5d50-4c98-ad1f-e8c40e8a9e47",
-      "length": 2,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "1dac0435-5c83-4d55-9631-bcc5f4ba18af",
@@ -15156,7 +15286,7 @@
     },
     {
       "$id": "917b0904-d9f6-445b-bc1a-f084694bfad2",
-      "length": 3,
+      "length": 10,
       "pluginMetadata": {
       },
       "symbol": "b9faa273-8cba-463e-bd46-4710cf31ca50",
@@ -15166,7 +15296,7 @@
     },
     {
       "$id": "d1387bd6-13fe-45c1-9e0b-107f185402ad",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "1a409ab0-c97e-4285-ad22-bc72d082467a",
@@ -15176,7 +15306,7 @@
     },
     {
       "$id": "236acaf6-8162-4f4f-b804-5a0a07279d22",
-      "length": 2,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "1ec43998-08d7-493c-ad19-f142eb9a7e92",
@@ -15336,7 +15466,7 @@
     },
     {
       "$id": "72ebae94-6cb3-48bc-8a4c-3ac428881849",
-      "code": "//moves the character 40 pixels forward on the x axis, and 0 pixels on the y axis\r\nself.move(DASH_ATK_SHIFT_X.get(), DASH_ATK_SHIFT_Y.get());\r\n//plays a generic crash sound\r\nAudioClip.play(GlobalSfx.CRASH_2);",
+      "code": "//moves the character 40 pixels forward on the x axis, and 0 pixels on the y axis\r\nself.move(DASH_ATK_SHIFT_X, DASH_ATK_SHIFT_Y);\r\n//plays a generic crash sound\r\nAudioClip.play(GlobalSfx.CRASH_2);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -15753,7 +15883,7 @@
     {
       "$id": "fe3b0957-4e62-4180-a310-f0aba5b88eb4",
       "code": "",
-      "length": 10,
+      "length": 2,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -16534,7 +16664,7 @@
     },
     {
       "$id": "375b7a4a-8114-46e4-ae4e-e0195e2dd1ae",
-      "code": "self.setXSpeed(LEDGE_ATK_SPEED.get());\r\n",
+      "code": "self.setXSpeed(LEDGE_ATK_SPEED);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -18424,7 +18554,7 @@
     },
     {
       "$id": "1470786b-1d99-4464-9365-7be0fe69a67a",
-      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_ONE_X.get());\r\n",
+      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_ONE_X);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -18440,7 +18570,7 @@
     },
     {
       "$id": "6d8cd1bb-1d5f-4ede-b293-c95e8fc2c46c",
-      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_TWO_X.get());",
+      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_TWO_X);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -20750,7 +20880,7 @@
     },
     {
       "$id": "0df40d2c-132f-4cab-8618-33d8c92ad432",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X);\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -21508,7 +21638,7 @@
     },
     {
       "$id": "d758fdf6-b845-4948-86b1-fdc681c864c0",
-      "length": 7,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -21548,7 +21678,7 @@
     },
     {
       "$id": "c71b86e2-08b8-4498-be1c-4c2ffbda5f14",
-      "length": 4,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "53d0eb57-c767-4176-b5d2-5a61880be11d",
@@ -21728,7 +21858,7 @@
     },
     {
       "$id": "838a4530-69fc-4cf3-99ea-d256da2da45d",
-      "length": 4,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "a5ea47aa-23c7-4ba2-8725-6f5f69b4f518",
@@ -21868,7 +21998,7 @@
     },
     {
       "$id": "f44e285f-025b-43b5-a88e-33ac13301ba3",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "de389b0f-bcec-4cf6-ad44-0f6e718b2494",
@@ -21878,7 +22008,7 @@
     },
     {
       "$id": "b97a7508-b787-43b6-a90e-52cca1910550",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "0241809f-0f3b-4c75-85e3-b7275047fb9a",
@@ -22038,7 +22168,7 @@
     },
     {
       "$id": "c5656508-df39-4cbd-8cd3-7d5adc018670",
-      "length": 5,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -22068,7 +22198,7 @@
     },
     {
       "$id": "1a7f0bc1-8f2d-4056-901e-9dab21db346c",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "de42f6fc-3371-460f-b455-36235533f027",
@@ -22078,7 +22208,7 @@
     },
     {
       "$id": "15b962b3-0dcc-4274-9365-458a1ff3864a",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "898f7fc9-8f5d-44a7-9781-de5635c8addb",
@@ -22266,7 +22396,7 @@
     },
     {
       "$id": "186b3cb7-3314-49b2-850e-524dde4d338d",
-      "length": 7,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -22276,7 +22406,7 @@
     },
     {
       "$id": "1ac59cdc-2c93-4a97-8778-961536c8125d",
-      "length": 7,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -23762,7 +23892,7 @@
     },
     {
       "$id": "664105d8-aa2f-4769-af47-a94722697aad",
-      "code": "//removes previously set damage armor\r\nself.updateAnimationStats({bodyStatus:BodyStatus.NONE});",
+      "code": null,
       "length": 1,
       "pluginMetadata": {
       },
@@ -23778,7 +23908,7 @@
     },
     {
       "$id": "47d0efeb-f48b-40df-9ec5-cc69350c0aa8",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -24936,7 +25066,7 @@
     },
     {
       "$id": "54d21cec-f587-4d6c-b11d-fe3e0549cba1",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -24960,7 +25090,7 @@
     },
     {
       "$id": "b2aa7aa6-e6f0-43c6-b897-4f74c489beeb",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -24976,7 +25106,7 @@
     },
     {
       "$id": "18a89491-a715-4ec2-a034-bf5948de898e",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -28068,7 +28198,7 @@
     },
     {
       "$id": "1de2afb1-bbf2-4fd6-8a29-4bf7ae10cf5f",
-      "length": 4,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": "26d05bbb-18ea-48d1-9b75-02196fa4f4c6",
@@ -28078,7 +28208,7 @@
     },
     {
       "$id": "f88c690d-3555-4a13-8d0a-ed0da88acf7c",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "690fbbed-9ecf-49ed-a839-9169adcf5918",
@@ -28088,7 +28218,7 @@
     },
     {
       "$id": "0d38cb99-6614-4610-b0fb-26fb901c1cbf",
-      "length": 3,
+      "length": 10,
       "pluginMetadata": {
       },
       "symbol": "c83307ea-dba2-4460-8b56-d8cb4b17dfde",
@@ -30718,7 +30848,7 @@
     },
     {
       "$id": "c515a3f3-5378-492a-b81b-09ec272742a9",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "11574b59-01fb-449a-b874-243683617d2f",
@@ -30728,7 +30858,7 @@
     },
     {
       "$id": "af4b30af-92ab-4082-b577-0348cfe3da15",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "e2080726-458a-4b8c-a4fd-b4a6e84979a2",
@@ -30748,7 +30878,7 @@
     },
     {
       "$id": "0fd807b3-d99c-474c-86d9-3b37fcf34f99",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "b23b7a9a-0a04-4f92-81f3-01076f86c0ce",
@@ -30758,7 +30888,7 @@
     },
     {
       "$id": "f58555b2-946f-4fa1-b5a4-9eeb88f135ad",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "ddc986ec-1a85-412d-8117-0ca06c50d633",
@@ -30918,7 +31048,7 @@
     },
     {
       "$id": "015404bd-29cd-4863-bb36-f735b9fe6646",
-      "length": 4,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": "b74de6c5-fc16-4d73-b081-25370d55cbe7",
@@ -30928,7 +31058,7 @@
     },
     {
       "$id": "14778af8-6189-42b7-9eed-51e7ef149a68",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "3cfe21c3-a593-429f-8393-871e0bb6066a",
@@ -30938,7 +31068,7 @@
     },
     {
       "$id": "713c555a-c49e-41e2-8337-b49976447c78",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "4ab12721-33eb-40ed-9f93-4391ebbc1c05",
@@ -30968,7 +31098,7 @@
     },
     {
       "$id": "2a0b74e4-ca79-494b-a505-67697a546dad",
-      "length": 4,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "0f05dce3-7b53-4da9-84ec-e44dc51f0bf6",
@@ -31118,7 +31248,7 @@
     },
     {
       "$id": "c423697e-d604-4740-8223-15fdea42a005",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "6ad7a229-e834-4c30-b1b5-b1b05d279f77",
@@ -31128,7 +31258,7 @@
     },
     {
       "$id": "a67d1532-953e-4b0d-a187-75571c9e697f",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "218fa454-cc43-42db-a026-95b6100f711a",
@@ -31138,7 +31268,7 @@
     },
     {
       "$id": "e8d562d8-f714-485c-988f-ab772009f208",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "6b66d6f7-20b0-4137-ab21-6b6c433c1a47",
@@ -31158,7 +31288,7 @@
     },
     {
       "$id": "82fbd9e7-3284-49af-b20f-1c7cb3fcc392",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "47dce5d0-3979-421b-964c-4d7eb7a14f38",
@@ -31168,7 +31298,7 @@
     },
     {
       "$id": "aed08b40-7dcc-48cc-b2a2-97f2fd351cdc",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "726b407f-b3b8-461d-8273-f525e6177e00",
@@ -31388,7 +31518,7 @@
     },
     {
       "$id": "ecab37ac-7d18-4462-801e-29f70317b58b",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "9c9c7624-911a-483e-bfd6-a4d17182c98d",
@@ -31398,7 +31528,7 @@
     },
     {
       "$id": "b74397c6-8ae0-4a6e-b8ee-d7ece6d701f0",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "487aec74-b7a7-4926-a6b6-1a142bf27dea",
@@ -31568,7 +31698,7 @@
     },
     {
       "$id": "f8f5ea2b-01df-43ff-b46b-0865904e246d",
-      "length": 3,
+      "length": 10,
       "pluginMetadata": {
       },
       "symbol": "c6dc7415-018c-4cfd-9d4f-8f13ee492475",
@@ -31578,7 +31708,7 @@
     },
     {
       "$id": "0f41723d-5dcc-4591-957f-38a1d948845e",
-      "length": 3,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "61c46631-5222-4c30-8016-d9ff2338906a",
@@ -31588,7 +31718,7 @@
     },
     {
       "$id": "a806c719-a69c-4765-8c02-9a8874c6efde",
-      "length": 2,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "bab1591c-b3de-498f-8d44-2a146376f027",
@@ -32218,7 +32348,7 @@
     },
     {
       "$id": "8d4ce292-61d1-4835-b838-e1ec0e13fe6c",
-      "length": 3,
+      "length": 4,
       "pluginMetadata": {
       },
       "symbol": "ee9689c1-04b2-416c-a5d7-e61127fa6b6a",
@@ -32248,7 +32378,7 @@
     },
     {
       "$id": "1d15895a-6886-4b7d-9584-19a22a3b91f0",
-      "length": 3,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "07056392-c73a-4471-9cd1-f6ffdcca238a",
@@ -32288,7 +32418,7 @@
     },
     {
       "$id": "0f5f155b-5f8d-4908-bc5e-91f6f2533934",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "0c1cd374-14dc-41fc-8b9c-efb7babf5a2a",
@@ -32298,7 +32428,7 @@
     },
     {
       "$id": "1afae195-b0ac-415b-801f-09695a779469",
-      "length": 5,
+      "length": 6,
       "pluginMetadata": {
       },
       "symbol": "b202e612-dd23-4026-bebb-fb6036c10206",
@@ -32308,7 +32438,7 @@
     },
     {
       "$id": "816bb06a-4ee6-4e54-94d8-470a9c343edb",
-      "length": 4,
+      "length": 5,
       "pluginMetadata": {
       },
       "symbol": "efb0a504-7f00-4233-8040-e0a844c0b4c7",
@@ -34923,7 +35053,7 @@
     {
       "$id": "f629b8f9-dfba-4f8e-98c6-283b661dabbd",
       "code": "",
-      "length": 6,
+      "length": 10,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -34931,7 +35061,7 @@
     {
       "$id": "8bf6ad08-3ce9-46cb-874a-cb5adc73edbd",
       "code": "",
-      "length": 8,
+      "length": 13,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -34939,7 +35069,7 @@
     {
       "$id": "b4880225-4578-4303-9266-f1bcc9eda662",
       "code": "",
-      "length": 8,
+      "length": 11,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -34955,7 +35085,7 @@
     {
       "$id": "7e031649-511a-47dc-8f66-ed1b6e392614",
       "code": "",
-      "length": 7,
+      "length": 19,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -35075,7 +35205,7 @@
     {
       "$id": "dfe0300a-52d8-47e8-801c-ba2755155c19",
       "code": "",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -35219,7 +35349,7 @@
     {
       "$id": "cd3350c5-5fa2-424a-911e-b3c7cba05edb",
       "code": "",
-      "length": 17,
+      "length": 21,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -35512,7 +35642,7 @@
     },
     {
       "$id": "e695fb07-9a60-48ac-a1f3-b67c62485555",
-      "length": 5,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -35532,7 +35662,7 @@
     },
     {
       "$id": "6eeda7b5-053d-4af5-8490-1c80b3833b42",
-      "length": 5,
+      "length": 7,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -35758,7 +35888,7 @@
     },
     {
       "$id": "e7176102-a38a-45b3-881e-33a220b2c1a3",
-      "length": 1,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "4d4e9185-e72e-43f5-8816-b202183416f8",
@@ -35798,7 +35928,7 @@
     },
     {
       "$id": "1f96bece-786d-4eb2-8f3a-3f3051b0bc27",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "dfd21cbe-9df6-4b31-a87b-b55a7013cab9",
@@ -35888,7 +36018,7 @@
     },
     {
       "$id": "e402b57f-714b-4cda-8349-9b61113b6cc4",
-      "length": 4,
+      "length": 3,
       "pluginMetadata": {
       },
       "symbol": "d39f2adc-4193-474a-b4f6-72c87b9cba55",
@@ -36074,8 +36204,8 @@
     },
     {
       "$id": "0f00f589-bf37-485b-907a-cf3f1df0c27a",
-      "code": null,
-      "length": 3,
+      "code": "//removes previously set damage armor\nself.updateAnimationStats({bodyStatus:BodyStatus.NONE});",
+      "length": 1,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -38724,7 +38854,7 @@
     },
     {
       "$id": "e581ccf0-b236-4654-86ed-307b92bfd801",
-      "code": "//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {\r\n    damage: 7, baseKnockback:25\r\n});\r\n\r\n//updates the hitbox stats for hitbox1 (indicated by the 1 at the start of the parenthesis)\r\nself.updateHitboxStats(1, {\r\n    damage: 7, baseKnockback:25\r\n});",
+      "code": "//updates the hitbox stats for hitbox0 (indicated by the 0 at the start of the parenthesis)\r\nself.updateHitboxStats(0, {\r\n    damage: 7, baseKnockback:25\r\n});",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39161,14 +39291,6 @@
       "type": "FRAME_SCRIPT"
     },
     {
-      "$id": "93a9db85-be76-472d-9dd2-be0d0deb9bdc",
-      "code": "",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
       "$id": "781a14c1-be09-4591-adbf-5ef7667015ae",
       "code": "",
       "length": 1,
@@ -39352,7 +39474,7 @@
     },
     {
       "$id": "a112f088-2c73-4b47-b2d8-2bb9da3e5835",
-      "code": "",
+      "code": "disableClutch();",
       "length": 3,
       "pluginMetadata": {
       },
@@ -39360,7 +39482,7 @@
     },
     {
       "$id": "c2c00646-7aea-4cef-ab47-299041964bfe",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X);\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39734,7 +39856,7 @@
     },
     {
       "$id": "20ea3c91-6329-414d-9f3c-73b13fef0085",
-      "code": "//adds damage armor to the character\r\nself.updateAnimationStats({bodyStatus:BodyStatus.DAMAGE_ARMOR, bodyStatusStrength:15});\r\n//plays a randomized attack voice sound from the character's attackVoiceIds character stat.\r\nself.playAttackVoice();",
+      "code": "//plays a randomized attack voice sound from the character's attackVoiceIds character stat.\r\nself.playAttackVoice();",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39808,7 +39930,7 @@
     },
     {
       "$id": "473cd39d-3aea-4fcb-b1df-a1cc834087a8",
-      "code": "//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(SIDE_SPECIAL_BOOST_Y.get());",
+      "code": "//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\nself.setYSpeed(SIDE_SPECIAL_BOOST_Y);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -39863,7 +39985,7 @@
     {
       "$id": "e73ca331-441b-4179-9d2f-e100c033c627",
       "code": "",
-      "length": 2,
+      "length": 1,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -39903,7 +40025,7 @@
     {
       "$id": "fa2d3177-ff08-4c5c-808c-eb09ab7659a4",
       "code": "",
-      "length": 2,
+      "length": 3,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -40014,7 +40136,7 @@
     },
     {
       "$id": "e6e7c5d1-3955-4864-9864-3c20b391eb7c",
-      "code": "//Plays a specific voice clip with a 50% probability of playing\r\nif(Random.getValue() >= FORWARD_STRONG_ATK_CHANCE_CLIP.get()){ \r\n  AudioClip.play(self.getResource().getContent(\"heavyattack1\"), { channel: \"voice\" });\r\n}",
+      "code": "//Plays a specific voice clip with a 50% probability of playing\r\nif(Random.getValue() >= FORWARD_STRONG_ATK_CHANCE_CLIP){ \r\n  AudioClip.play(self.getResource().getContent(\"heavyattack1\"), { channel: \"voice\" });\r\n}",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42268,7 +42390,7 @@
     },
     {
       "$id": "97b112a7-79fb-496a-ba1b-8139b9cbd757",
-      "code": "//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(SIDE_SPECIAL_BOOST_Y.get());",
+      "code": "//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\nself.setYSpeed(SIDE_SPECIAL_BOOST_Y);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42308,7 +42430,7 @@
     },
     {
       "$id": "534c2667-0086-41ef-8033-d3294f77761b",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42332,7 +42454,7 @@
     },
     {
       "$id": "6052be8d-b4f6-494f-9925-35980224392e",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42364,7 +42486,7 @@
     },
     {
       "$id": "1dcb552e-42aa-4e31-a688-98e9e914a0b0",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42388,7 +42510,7 @@
     },
     {
       "$id": "358c5447-ca4a-4b44-98f1-23799472025c",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X.get());\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42684,7 +42806,7 @@
     },
     {
       "$id": "91bf6a48-b6cf-4c60-addf-ac481b1c3048",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "c3975cbf-5fdd-4fe1-9ea1-0e255f3c519b",
@@ -42694,7 +42816,7 @@
     },
     {
       "$id": "57385c92-75e4-43a6-872a-5c789cbd83b0",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "1d19c8d8-3d0c-48e5-95ab-2ee16ebc2d4c",
@@ -42714,7 +42836,7 @@
     },
     {
       "$id": "fcea39ac-88f1-4b4a-a490-2c4a965a2d9a",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "27c4cec7-7735-457c-a715-ec324d36463f",
@@ -42724,7 +42846,7 @@
     },
     {
       "$id": "5d00f0ab-edfc-4bf7-9fdd-632f54bacaff",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "2b12e797-69c2-4032-9a55-6bdcc1fb45fd",
@@ -42734,7 +42856,7 @@
     },
     {
       "$id": "5cb8ab3b-f5f9-4173-b5a7-4c9718d3f4f3",
-      "length": 17,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -42744,7 +42866,7 @@
     },
     {
       "$id": "5d72a11d-3b25-413d-86bd-c32afb2d8c5b",
-      "length": 17,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -42754,7 +42876,7 @@
     },
     {
       "$id": "f25d6c5c-2555-4aa6-b44a-70e13181c2e1",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "5713232a-6c46-4377-82fc-1326620d895a",
@@ -42764,7 +42886,7 @@
     },
     {
       "$id": "f2882f48-94ae-484e-8414-688bae68feec",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "fec674b1-2abf-48e5-abe0-dc0aae322385",
@@ -42784,7 +42906,7 @@
     },
     {
       "$id": "9306a233-66ae-4140-ad15-ee0ab144a2d5",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "d0de5664-2f9f-45e2-923f-e291684468da",
@@ -42794,7 +42916,7 @@
     },
     {
       "$id": "94c7cbce-c321-48c9-8d62-2d8615a14aa4",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "7b321ccd-e9b0-494c-9f8a-323c42bf7eae",
@@ -42804,7 +42926,7 @@
     },
     {
       "$id": "bd2ce432-b845-470b-af61-d31e57153892",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "d1a070c7-e67f-40dd-bdc6-7d439b4f85ba",
@@ -42814,7 +42936,7 @@
     },
     {
       "$id": "e49fb945-8e79-4f39-bb13-f808899f9560",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "eb7a02de-3379-4780-9a23-caae4159a675",
@@ -42834,7 +42956,7 @@
     },
     {
       "$id": "9bdb4b06-f976-4afc-b4f4-e3c69f4ec191",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "0591cecb-224b-421e-9992-3a2e3643d5a4",
@@ -42844,7 +42966,7 @@
     },
     {
       "$id": "12d74222-2229-41c1-a91c-cc63f8fba0b0",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -42854,7 +42976,7 @@
     },
     {
       "$id": "eba8cb97-906d-41bb-8204-83390e3e72d2",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "dbdefbe2-8f39-4e4d-a538-32cd848f74a1",
@@ -42864,7 +42986,7 @@
     },
     {
       "$id": "86131164-25de-48f6-9d1b-03e3da9c360a",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "70b264c4-e4a8-4a70-b09e-2af3189190de",
@@ -42884,7 +43006,7 @@
     },
     {
       "$id": "405ced6d-214b-4675-bd57-e5abaf28339a",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "caf938c2-af01-4cb3-a8de-3266bc9edfd6",
@@ -42894,7 +43016,7 @@
     },
     {
       "$id": "aa0c16ee-2c59-4696-8a38-f228edced15b",
-      "length": 3,
+      "length": 2,
       "pluginMetadata": {
       },
       "symbol": "9ec61b17-1625-4624-b8bf-7911b7e3775d",
@@ -42905,7 +43027,7 @@
     {
       "$id": "947a2d13-d86f-4d33-af18-0957cd0293dc",
       "code": "",
-      "length": 17,
+      "length": 13,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -42920,7 +43042,7 @@
     },
     {
       "$id": "24d9e8f8-fc2f-43cb-8bc6-9f95289ae073",
-      "length": 17,
+      "length": 13,
       "pluginMetadata": {
       },
       "symbol": null,
@@ -43402,6 +43524,280 @@
       "$id": "f8f06022-39c2-4365-b5d9-38b18da9dc3a",
       "code": "",
       "length": 17,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "15eeb97b-1559-46a8-8aa9-9999afac4c3f",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "0278cd87-3f56-4c04-b61e-4dc839957827",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "112549af-4665-4ddb-9ac1-27581a4dbc60",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "033b3f9b-baa5-4ae6-a8b6-3418f8784711",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "894fca82-8815-4009-bf44-3911213886ff",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3bd6c19b-85ac-4a7d-bf46-27960d19c60a",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "0042de6f-941f-4a2a-984d-70f1b3276720",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "9f5b4a0f-7101-4eec-9d84-4d9149afc06d",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "09c5185a-de1f-4066-9b9b-5d3965a0dce1",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "d7aa646e-7f13-46eb-8b63-4dc5898432af",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "44427f8a-8729-4337-84eb-2fc746956480",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "9ac1ac31-6fac-4f54-aec2-5b731e36e864",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "1e121517-4467-41c1-9c3d-8fdb7d18feaa",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "6f0f5271-fa11-4ee4-a1f6-ad502b4fe633",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "79053f58-cfdd-49cd-97c8-c11809caaea8",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "86460496-db14-485a-90fc-17326d0525ca",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "1f55c59f-d9cb-4336-8b16-1c51363c3971",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3099dced-765b-4d13-8f11-afb799266c39",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "1da9d76d-dd4c-4d15-9b84-ad58e0941cc7",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "a0baac7a-0f3d-4b76-aff3-7e137ee082b5",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "5c7af046-30d2-479e-9910-75adfae2efbb",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "8885c00f-abc2-4c71-ac90-82db3256a4b4",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "034f1076-435e-4cad-ba33-365ce4d9499e",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "fbda08dc-20b5-4f78-bb42-5075607c5dd8",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "80092c47-7451-4487-a301-4db11efa0646",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "e0a2ee88-7193-4835-a847-2a31fc488c04",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "485cb1d2-799e-4d56-aecc-66e84960eb2f",
+      "code": "//adds damage armor to the character\nself.updateAnimationStats({bodyStatus:BodyStatus.DAMAGE_ARMOR, bodyStatusStrength:6});",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "92d50e9c-4620-4ff9-a728-9a7c97275b6f",
+      "code": "",
+      "length": 7,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3bb594e1-4104-419f-8a40-d5c226c8d417",
+      "code": "",
+      "length": 2,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "b99a4d75-d505-4c6c-bfd1-ebe969096c67",
+      "code": "",
+      "length": 3,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "9cdea9c1-2646-4cb0-afa9-3f9ef21f9ab6",
+      "code": "",
+      "length": 1,
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
@@ -45350,6 +45746,7 @@
       "hidden": false,
       "keyframes": [
         "1c2f69af-9174-4c7a-ba2a-35d1f5a46fc4",
+        "9cdea9c1-2646-4cb0-afa9-3f9ef21f9ab6",
         "0649c393-2d2c-4b39-a1ce-81a0d7a5e158",
         "7e6906c5-8cbd-4f55-ab7d-ac1a542f0d5e",
         "27acf5d1-dd0b-4feb-bd4b-045eafced48f",
@@ -45441,8 +45838,11 @@
       "keyframes": [
         "9fd497b9-846f-4202-9e6d-030b117be4a1",
         "fe3b0957-4e62-4180-a310-f0aba5b88eb4",
+        "485cb1d2-799e-4d56-aecc-66e84960eb2f",
+        "92d50e9c-4620-4ff9-a728-9a7c97275b6f",
         "f888363f-15d2-46e7-9dd4-bb23a9d30710",
         "0f00f589-bf37-485b-907a-cf3f1df0c27a",
+        "3bb594e1-4104-419f-8a40-d5c226c8d417",
         "72ebae94-6cb3-48bc-8a4c-3ac428881849",
         "a74184a4-8b9e-4f7b-8f2e-2cd2aa5f4d58",
         "eeb01a30-1c39-43d1-9578-1acee62dfe8d",
@@ -50316,11 +50716,11 @@
         "e440e5e4-82a4-4e8a-b4a2-0eb9ae623adb"
       ],
       "locked": false,
-      "name": "hitbox2",
+      "name": "hitbox1",
       "pluginMetadata": {
         "com.fraymakers.FraymakersMetadata": {
           "collisionBoxType": "HIT_BOX",
-          "index": 2
+          "index": 1
         }
       },
       "type": "COLLISION_BOX"
@@ -50635,7 +51035,7 @@
       "hidden": false,
       "keyframes": [
         "19e4f5f8-228d-4ce8-8a9b-264c3065a2a7",
-        "93a9db85-be76-472d-9dd2-be0d0deb9bdc",
+        "b99a4d75-d505-4c6c-bfd1-ebe969096c67",
         "34b25b44-46b5-4d1d-9e77-004eac4f3e24",
         "fe659f6c-32ba-4bbc-8947-0c8ae34f7b57",
         "01f0e30e-a353-4730-8575-0f46251590b6",
@@ -52718,7 +53118,7 @@
       "$id": "33b6e183-d391-46da-9f2d-5f4413ef2cd5",
       "defaultAlpha": 0.5,
       "defaultColor": "0x000000",
-      "hidden": true,
+      "hidden": false,
       "keyframes": [
         "fa34bf91-acc6-430d-8b62-800c4fa661df",
         "23cc3b60-c994-4ef5-8e10-4ae409d3b4c8",
@@ -54854,11 +55254,11 @@
         "64d98e56-6102-4249-a8dc-19d23c5a1cc7"
       ],
       "locked": false,
-      "name": "hitbox1",
+      "name": "hitbox0",
       "pluginMetadata": {
         "com.fraymakers.FraymakersMetadata": {
           "collisionBoxType": "HIT_BOX",
-          "index": 1
+          "index": 0
         }
       },
       "type": "COLLISION_BOX"
@@ -55743,6 +56143,331 @@
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "a3d5d46c-4eef-4a7f-b955-22924586608b",
+      "hidden": false,
+      "keyframes": [
+        "15eeb97b-1559-46a8-8aa9-9999afac4c3f"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "2a2857f9-724e-4dbe-8243-7bc8b69cf9d1",
+      "hidden": false,
+      "keyframes": [
+        "0278cd87-3f56-4c04-b61e-4dc839957827"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "bdab3182-dbdd-4bf7-a7ab-a9135b191579",
+      "hidden": false,
+      "keyframes": [
+        "112549af-4665-4ddb-9ac1-27581a4dbc60"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3f49da30-69c6-469c-bd57-4845aeef4148",
+      "hidden": false,
+      "keyframes": [
+        "033b3f9b-baa5-4ae6-a8b6-3418f8784711"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "ff1fd964-6d3c-4236-ba47-21d502042353",
+      "hidden": false,
+      "keyframes": [
+        "894fca82-8815-4009-bf44-3911213886ff"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3100bbed-6fef-41eb-81c4-a328ef40d40f",
+      "hidden": false,
+      "keyframes": [
+        "3bd6c19b-85ac-4a7d-bf46-27960d19c60a"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "9442f289-c349-4750-99ed-d21f752b9721",
+      "hidden": false,
+      "keyframes": [
+        "0042de6f-941f-4a2a-984d-70f1b3276720"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "6cf25738-e445-4041-9da0-2554aa64d1e3",
+      "hidden": false,
+      "keyframes": [
+        "9f5b4a0f-7101-4eec-9d84-4d9149afc06d"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "5c964987-823e-4691-b352-900409d6136d",
+      "hidden": false,
+      "keyframes": [
+        "09c5185a-de1f-4066-9b9b-5d3965a0dce1"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "cbb85a82-2bb3-4251-adc7-aec7bcfbee01",
+      "hidden": false,
+      "keyframes": [
+        "d7aa646e-7f13-46eb-8b63-4dc5898432af"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "5b8028d8-3931-40dc-b801-58346098b709",
+      "hidden": false,
+      "keyframes": [
+        "44427f8a-8729-4337-84eb-2fc746956480"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "91344dd9-1c59-4728-95fb-612237694326",
+      "hidden": false,
+      "keyframes": [
+        "9ac1ac31-6fac-4f54-aec2-5b731e36e864"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "eba1ab1c-b172-41bd-8f69-13ae8f5286e3",
+      "hidden": false,
+      "keyframes": [
+        "1e121517-4467-41c1-9c3d-8fdb7d18feaa"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "4806c26c-8fc5-4323-ac7f-26b013a98254",
+      "hidden": false,
+      "keyframes": [
+        "6f0f5271-fa11-4ee4-a1f6-ad502b4fe633"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "171ac720-ccfd-4215-987a-83b7a66f1344",
+      "hidden": false,
+      "keyframes": [
+        "79053f58-cfdd-49cd-97c8-c11809caaea8"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "2e4c3cb4-1bc1-46ac-a244-ffa965a26d99",
+      "hidden": false,
+      "keyframes": [
+        "86460496-db14-485a-90fc-17326d0525ca"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "20b4c57e-b16b-4ebe-b614-b2a7ea7ffe08",
+      "hidden": false,
+      "keyframes": [
+        "1f55c59f-d9cb-4336-8b16-1c51363c3971"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "38fb712c-3041-49f6-b3c6-11d44c7cd565",
+      "hidden": false,
+      "keyframes": [
+        "3099dced-765b-4d13-8f11-afb799266c39"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "f9e0b065-c929-4923-a2a3-3d181262eb90",
+      "hidden": false,
+      "keyframes": [
+        "1da9d76d-dd4c-4d15-9b84-ad58e0941cc7"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3d5a459a-a1fb-4b6b-a439-d13e3ba32e8c",
+      "hidden": false,
+      "keyframes": [
+        "a0baac7a-0f3d-4b76-aff3-7e137ee082b5"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "fcce71ff-d964-4af9-9b92-1a9141a82e08",
+      "hidden": false,
+      "keyframes": [
+        "5c7af046-30d2-479e-9910-75adfae2efbb"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "681734c7-8a6f-4eb0-b3a6-640d997a7552",
+      "hidden": false,
+      "keyframes": [
+        "8885c00f-abc2-4c71-ac90-82db3256a4b4"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "a7872fa6-99b1-4e3e-bbe3-bb86206a490a",
+      "hidden": false,
+      "keyframes": [
+        "034f1076-435e-4cad-ba33-365ce4d9499e"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "8b762402-f72f-4dae-8c85-c610afa18b56",
+      "hidden": false,
+      "keyframes": [
+        "fbda08dc-20b5-4f78-bb42-5075607c5dd8"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "9652284e-fe44-44a6-8477-2cc9c836f93e",
+      "hidden": false,
+      "keyframes": [
+        "80092c47-7451-4487-a301-4db11efa0646"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "a313f8f6-fb2f-413e-942c-6033a2b221c4",
+      "hidden": false,
+      "keyframes": [
+        "e0a2ee88-7193-4835-a847-2a31fc488c04"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
     }
   ],
   "paletteMap": {

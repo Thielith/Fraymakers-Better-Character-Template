@@ -108,8 +108,14 @@
 	aerial_down_land: {xSpeedConservation: 0},
 
 	//SPECIAL ATTACKS
-	special_neutral: {},
-	special_neutral_air: {},
+	special_neutral: {
+		leaveGroundCancel: false
+	},
+	special_neutral_air: {
+		leaveGroundCancel: false,
+		landType: LandType.LINK_FRAMES,
+		landAnimation: "special_neutral"
+	},
 	special_up: {  // updated on frame 6, 7
 		leaveGroundCancel: false,
 		xSpeedConservation: 0.5, ySpeedConservation: 0.5,

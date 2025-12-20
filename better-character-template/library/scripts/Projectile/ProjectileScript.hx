@@ -7,17 +7,51 @@ var Y_SPEED = -7; // Y Speed of water
 var life = self.makeInt(60 * 5);
 var originalOwner = null;
 
+// after image aspects
+var timeBetweenAfterImage:Int = 5;
+var afterImageLife:Int = 15;
+
 function initialize() {
 	self.addEventListener(EntityEvent.COLLIDE_FLOOR, onGroundHit, { persistent: true });
+	self.addEventListener(EntityEvent.COLLIDE_WALL, onWallHit, {persistent:true});
 	self.addEventListener(GameObjectEvent.HIT_DEALT, onHit, { persistent: true });
 
 	// Set up horizontal reflection
 	Common.enableReflectionListener({ mode: "X", replaceOwner: true });
 
-	self.setCostumeIndex(self.getOwner().getCostumeIndex());
+	originalOwner = self.getOwner();
+	self.setCostumeIndex(originalOwner.getCostumeIndex());
+
+	// after images
+	self.addTimer(timeBetweenAfterImage, -1, createAfterImage);
+
 	self.setState(PState.ACTIVE);
 	self.setXSpeed(X_SPEED);
 	self.setYSpeed(Y_SPEED);
+}
+
+// runs every frame
+function update() {
+	if (self.inState(PState.ACTIVE)) {
+		life.dec();
+		if (life.get() <= 0) {
+			// Engine.log("going to die now");
+			destroy();
+		}
+	}
+} 
+
+// =====================================================
+function createAfterImage(){
+	match.createVfx(new VfxStats({
+		spriteContent: self.getResource().getContent("fraynkieProjectile"),
+		animation: "idle",
+		relativeWith: false,
+		x: self.getX(), y: self.getY(),
+		timeout: afterImageLife,
+		fadeOut: true,
+		layer: VfxLayer.CHARACTERS_BACK
+	}));
 }
 
 function destroy() {
@@ -30,23 +64,21 @@ function onGroundHit(event) {
 	destroy();
 }
 
+function onWallHit(event) {
+	// Engine.log("hit wall");
+	destroy();
+}
+
 function onHit(event) {
 	// Engine.log("hit something");
 	destroy();
 }
+// =====================================================
 
-function update() {
-	if (self.inState(PState.ACTIVE)) {
-		life.dec();
-		if (life.get() <= 0) {
-			// Engine.log("going to die now");
-			destroy();
-		}
-	}
-} 
 
 function onTeardown() {
 	// Engine.log("tearing down");
 	self.removeEventListener(EntityEvent.COLLIDE_FLOOR, onGroundHit);
+	self.removeEventListener(EntityEvent.COLLIDE_WALL, onWallHit);
 	self.removeEventListener(GameObjectEvent.HIT_DEALT, onHit);
 }

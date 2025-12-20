@@ -1,15 +1,6 @@
 {
   "animations": [
     {
-      "$id": "6a9d6e34-754c-4f02-b5ed-73422d1470ef",
-      "layers": [
-        "113e01c0-2c42-4049-973e-5ab6e4a3fdec"
-      ],
-      "name": "spawn",
-      "pluginMetadata": {
-      }
-    },
-    {
       "$id": "679c0225-2a7c-4091-bc40-fe233e561573",
       "layers": [
         "b9e9fb3e-57a1-4dd2-9545-586f038a8301",
@@ -37,16 +28,6 @@
   "guid": "1d1e3833-c7f3-4e36-8103-4c797b5e598e",
   "id": "fraynkieProjectile",
   "keyframes": [
-    {
-      "$id": "5002ba9c-3f13-4cfa-85eb-0efe278fee1b",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": "c59e65a4-916d-4892-b17d-642f9946c56b",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
     {
       "$id": "8a3226a9-d95d-4de7-ae1c-ad1be1ebe773",
       "length": 1,
@@ -209,18 +190,6 @@
     }
   ],
   "layers": [
-    {
-      "$id": "113e01c0-2c42-4049-973e-5ab6e4a3fdec",
-      "hidden": false,
-      "keyframes": [
-        "5002ba9c-3f13-4cfa-85eb-0efe278fee1b"
-      ],
-      "locked": false,
-      "name": "Image Layer",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
     {
       "$id": "cb840ce5-4a50-41d6-b796-aa9d7aab7bbb",
       "hidden": false,
@@ -411,21 +380,6 @@
     "com.fraymakers.FraymakersMetadata"
   ],
   "symbols": [
-    {
-      "$id": "c59e65a4-916d-4892-b17d-642f9946c56b",
-      "alpha": 1,
-      "imageAsset": "b298c12e-58d8-423b-a319-4c9323edebe4",
-      "pivotX": 25.5,
-      "pivotY": 43,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 0.77,
-      "scaleY": 0.48,
-      "type": "IMAGE",
-      "x": -20,
-      "y": -40
-    },
     {
       "$id": "01f9a2be-b6ba-4855-ace7-0eaa630c7d7f",
       "alpha": 1,

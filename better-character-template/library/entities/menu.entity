@@ -163,6 +163,15 @@
       "name": "hud_sad_front",
       "pluginMetadata": {
       }
+    },
+    {
+      "$id": "61200cbb-80bb-437d-af8b-212d1b4e783c",
+      "layers": [
+        "9a38861a-2ee0-4129-ad28-d0ed4a6d7616"
+      ],
+      "name": "in_match_hud_reference",
+      "pluginMetadata": {
+      }
     }
   ],
   "export": true,
@@ -631,6 +640,16 @@
       "pluginMetadata": {
       },
       "symbol": "355361bd-46d4-4f0a-9741-90f85e140fc0",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "f1578779-cf9b-48b8-9e59-d8b0125cbc15",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": "e84c9f58-4c57-4ee3-a643-8e8dc2d6ac82",
       "tweenType": "LINEAR",
       "tweened": false,
       "type": "IMAGE"
@@ -1277,6 +1296,18 @@
       "pluginMetadata": {
       },
       "type": "IMAGE"
+    },
+    {
+      "$id": "9a38861a-2ee0-4129-ad28-d0ed4a6d7616",
+      "hidden": false,
+      "keyframes": [
+        "f1578779-cf9b-48b8-9e59-d8b0125cbc15"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
     }
   ],
   "paletteMap": {
@@ -1742,6 +1773,21 @@
       "type": "IMAGE",
       "x": -15,
       "y": -29
+    },
+    {
+      "$id": "e84c9f58-4c57-4ee3-a643-8e8dc2d6ac82",
+      "alpha": 1,
+      "imageAsset": "8e75290c-7285-4103-8390-4021dcd4cf77",
+      "pivotX": 75,
+      "pivotY": 24,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": -21,
+      "y": -21
     }
   ],
   "tags": [
