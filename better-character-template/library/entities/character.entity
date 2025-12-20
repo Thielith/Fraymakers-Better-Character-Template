@@ -20849,7 +20849,7 @@
     },
     {
       "$id": "0df40d2c-132f-4cab-8618-33d8c92ad432",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_X.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -40325,7 +40325,7 @@
     },
     {
       "$id": "c2c00646-7aea-4cef-ab47-299041964bfe",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_X.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X.get());\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y.get());\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
