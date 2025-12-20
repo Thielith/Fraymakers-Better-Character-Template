@@ -116,14 +116,14 @@
 		allowMovement: true,
 		groundSpeedCap: 5.5,
 		aerialSpeedCap: 3.25,
-		nextState:CState.FALL_SPECIAL
+		nextState: CState.FALL_SPECIAL
 	}, 
 	special_up_air: {  // updated on frame 6, 7
 		leaveGroundCancel: false,
 		xSpeedConservation: 0.5, ySpeedConservation: 0.5,
 		groundSpeedCap: 5.5,
 		aerialSpeedCap: 3.25,
-		nextState:CState.FALL_SPECIAL,
+		nextState: CState.FALL_SPECIAL,
 		landType: LandType.TOUCH
 	},
 	special_down: {
