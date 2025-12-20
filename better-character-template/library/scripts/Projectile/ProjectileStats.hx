@@ -1,12 +1,12 @@
-// Animation stats for Character Template Projectile
+// Projectile stats for Character Template Projectile
 {
-	spriteContent: self.getResource().getContent("charactertemplateprojectile"),
+	spriteContent: self.getResource().getContent("fraynkieProjectile"),
 	stateTransitionMapOverrides: [
 		PState.ACTIVE => {
-			animation: "projectileIdle"
+			animation: "idle"
 		},
 		PState.DESTROYING => {
-			animation: "projectileDestroy"
+			animation: "destroy"
 		}
 	],	
 	gravity: 0.7,

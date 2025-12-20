@@ -1,12 +1,12 @@
 {
   "export": true,
-  "guid": "9379a2d4-de7f-4371-90ff-070c5f3854b2",
-  "id": "charactertemplateScript",
+  "guid": "9f7c4361-ab6b-4083-bd5a-db0dff3ae366",
+  "id": "fraynkieScript",
   "language": "hscript",
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {
       "objectType": "CHARACTER",
-      "version": "0.3.0"
+      "version": "0.4.0"
     }
   },
   "plugins": [

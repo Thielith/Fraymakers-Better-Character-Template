@@ -107,9 +107,9 @@
     }
   ],
   "export": true,
-  "guid": "e12e2230-965b-4128-ae8a-e988b4de4910",
-  "id": "charactertemplateCostumes",
-  "imageAsset": "b1daa331-2413-440c-815d-c37309c70eed",
+  "guid": "322eba30-4f40-4a33-bd0c-1839bf6cf165",
+  "id": "fraynkieCostumes",
+  "imageAsset": "4c352630-4389-4835-a0da-dbdfc8b9ac68",
   "maps": [
     {
       "$id": "08954231-a459-49d3-8cdf-b57795a5399f",
@@ -398,7 +398,7 @@
   ],
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {
-      "version": "0.3.1"
+      "version": "0.4.0"
     }
   },
   "plugins": [

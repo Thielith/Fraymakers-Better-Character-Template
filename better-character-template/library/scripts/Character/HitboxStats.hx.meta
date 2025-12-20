@@ -1,7 +1,7 @@
 {
   "export": true,
-  "guid": "29986f4a-0bed-4ac4-bd55-8c00da645c7b",
-  "id": "charactertemplateHitboxStats",
+  "guid": "827f4b86-d9d5-4663-a820-76a34326b5db",
+  "id": "fraynkieHitboxStats",
   "language": "hscript",
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {

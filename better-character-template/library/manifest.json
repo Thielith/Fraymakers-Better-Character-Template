@@ -1,16 +1,16 @@
 {
-  "resourceId": "charactertemplate",
+  "resourceId": "fraynkie",
   "content": [{
-    "id": "charactertemplate",
+    "id": "fraynkie",
     "name": "Fraynkie",
     "description": "Just a sweet little baby",
     "type": "character",
-    "objectStatsId": "charactertemplateCharacterStats",
-    "animationStatsId": "charactertemplateAnimationStats",
-    "hitboxStatsId": "charactertemplateHitboxStats",
-    "scriptId": "charactertemplateScript",
-    "costumesId": "charactertemplateCostumes",
-    "aiId": "charactertemplateAi",
+    "objectStatsId": "fraynkieCharacterStats",
+    "animationStatsId": "fraynkieAnimationStats",
+    "hitboxStatsId": "fraynkieHitboxStats",
+    "scriptId": "fraynkieScript",
+    "costumesId": "fraynkieCostumes",
+    "aiId": "fraynkieAi",
     "metadata": {
       "ui":{
         "entityId":"menu",
@@ -18,8 +18,8 @@
           "animation":"full",
           "animation_icon":"icon",
           "animation_icon_no_palette":"icon_no_palette",
-          "x_offset":0,
-          "y_offset":38,
+          "x_offset": 0,
+          "y_offset": 38,
           "x_offset_door": 0,
           "y_offset_door": 0,
           "x_offset_door_ffa": 0,
@@ -48,16 +48,16 @@
       }
     }
   },{
-    "id": "charactertemplateAi",
+    "id": "fraynkieAi",
     "type": "characterAi",
-    "scriptId": "charactertemplateAiScript"
+    "scriptId": "fraynkieAiScript"
   },{
-    "id": "characterTemplateNspecProjectile",
+    "id": "fraynkieProjectile",
     "type": "projectile",
-    "objectStatsId": "charactertemplateNspecProjectileStats",
-    "animationStatsId": "charactertemplateNspecProjectileAnimationStats",
-    "hitboxStatsId": "charactertemplateNspecProjectileHitboxStats",
-    "scriptId": "charactertemplateNspecProjectileScript",
-    "costumesId": "charactertemplateCostumes"
+    "objectStatsId": "fraynkieProjectileStats",
+    "animationStatsId": "fraynkieProjectileAnimationStats",
+    "hitboxStatsId": "fraynkieProjectileHitboxStats",
+    "scriptId": "fraynkieProjectileScript",
+    "costumesId": "fraynkieCostumes"
   }]
 }

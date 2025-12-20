@@ -1,7 +1,7 @@
 // API Script
 
-
-var neutralSpecialProjectile = self.makeObject(null); // Tracks active Neutral Special projectile (in case we need to handle any special cases)
+// Tracks active Neutral Special projectile (in case we need to handle any special cases)
+var neutralSpecialProjectile = self.makeObject(null); 
 
 var lastDisabledNSpecStatusEffect = self.makeObject(null);
 
@@ -118,9 +118,16 @@ function jab3Loop(){
 
 //projectile
 function fireNSpecialProjectile(){
-    neutralSpecialProjectile.set(match.createProjectile(self.getResource().getContent("characterTemplateNspecProjectile"), self));
-    neutralSpecialProjectile.get().setX(self.getX() + self.flipX(NSPEC_PROJ_X_OFFSET));
-    neutralSpecialProjectile.get().setY(self.getY() + NSPEC_PROJ_Y_OFFSET);
+    neutralSpecialProjectile.set(
+        match.createProjectile(self.getResource().getContent("fraynkieProjectile"), self)
+    );
+    
+    neutralSpecialProjectile.get().setX(
+        self.getX() + self.flipX(NSPEC_PROJ_X_OFFSET)
+    );
+    neutralSpecialProjectile.get().setY(
+        self.getY() + NSPEC_PROJ_Y_OFFSET
+    );
 }
 
 //cooldown timer

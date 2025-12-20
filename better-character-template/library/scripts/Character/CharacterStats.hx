@@ -1,7 +1,7 @@
 // Character stats for CharacterTemplate
 {
 
-	spriteContent: self.getResource().getContent("charactertemplate"),
+	spriteContent: self.getResource().getContent("fraynkie"),
 	//GENERIC STATS
 
 	// Note: Currently scale adjustments invalidate SpecialAngle AUTOLINK_STRONGER and AUTOLINK_STRONGEST for values other than 1.0. 

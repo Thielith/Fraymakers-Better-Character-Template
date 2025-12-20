@@ -1,7 +1,7 @@
 {
   "export": true,
-  "guid": "fd67c485-e15b-4f5d-9368-d51e3bf97667",
-  "id": "charactertemplateNspecProjectileHitboxStats",
+  "guid": "b454d759-c8a0-45ac-92cc-9f0cc21b1b0e",
+  "id": "fraynkieProjectileHitboxStats",
   "language": "hscript",
   "pluginMetadata": {
   },
