@@ -34,6 +34,7 @@
 
     SIDE_SPECIAL_BOOST_X = self.makeFloat(8);    // used in special_side/Framescript:10, 15, 19, 23, 27
     SIDE_SPECIAL_BOOST_Y = self.makeFloat(-15);  // used in special_side/Framescript:10
+    SIDE_SPECIAL_SHIELD_HIT_SPEED_PENALTY = self.makeFloat(-4);  // used in onSideSpecialShieldHit() in this script 
 // --- End Magic Number Definitions ---
 
 
@@ -41,18 +42,14 @@
 var projectile = self.makeObject(null); 
 
 var disableNSpecStatusEffect = self.makeObject(null);
-
-var downSpecialLoopCheckTimer = self.makeInt(-1);
+var NEUTRAL_SPECIAL_COOLDOWN = 60;
+var NSPEC_PROJ_X_OFFSET = 40;
+var NSPEC_PROJ_Y_OFFSET = -50;
 
 var clutchTimer = self.makeInt(-1); // tracks the latest
 var clutchButtonIsHeld = self.makeBool(false); // Check if the clutch button is held current frame
 var clutchButtonWasHeld = self.makeBool(false); // Check if the clutch button was held prev. frame
 
-//offset projectile start position
-var NSPEC_PROJ_X_OFFSET = 40;
-var NSPEC_PROJ_Y_OFFSET = -50;
-
-var NEUTRAL_SPECIAL_COOLDOWN = 60;
 
 // start general functions --- 
 
@@ -88,10 +85,7 @@ function handleLinkFrames(e){
 		if(self.getCurrentFrame() >= 14){
 			self.updateAnimationStats({bodyStatus:BodyStatus.NONE});
 		}
-	} else if(self.inState(CState.SPECIAL_DOWN)){
-        specialDown_resetTimer();
-        downSpecialLoopCheckTimer.set(self.addTimer(1, -1, specialDown_checkLoop));    
-    }
+	}
 }
 
 function onTeardown() {
@@ -184,7 +178,7 @@ function onTeardown() {
 
 // ===== Side Special =====
     function onSideSpecialShieldHit(){
-        self.setXSpeed(-4);
+        self.setXSpeed(SIDE_SPECIAL_SHIELD_HIT_SPEED_PENALTY.get());
     }
 
     // allow user to jump if the final hit hits
@@ -192,44 +186,6 @@ function onTeardown() {
         self.updateAnimationStats({allowJump: true});
     }
 // ===== End Side Special =====
-
-// ===== Down Special =====
-    function specialDown_gotoEndlag(){
-        if(self.isOnFloor()){
-            self.playAnimation("special_down_endlag");
-        } else {
-            self.playAnimation("special_down_air_endlag");
-        }
-    }
-
-    function specialDown_resetTimer(){
-        self.removeTimer(downSpecialLoopCheckTimer.get());
-        downSpecialLoopCheckTimer.set(-1);
-    }
-
-    function specialDown_checkLoop(){
-        var heldControls:ControlsObject = self.getHeldControls();
-
-        if(!heldControls.SPECIAL){
-            specialDown_resetTimer();
-            specialDown_gotoEndlag();
-        }
-    }
-
-    function specialDown_gotoLoop(){
-        if(self.isOnFloor()){
-            self.playAnimation("special_down_loop");
-        } else {
-            self.playAnimation("special_down_air_loop");
-        }
-
-        //failsafe
-        specialDown_resetTimer();
-
-        // start checking inputs
-        downSpecialLoopCheckTimer.set(self.addTimer(1, -1, specialDown_checkLoop));    
-    }
-// ===== End Down Special =====
 
 // ===== Grab =====
     // used on throw_forward/Framescript:1, 3, 7, 13, 18, 20
