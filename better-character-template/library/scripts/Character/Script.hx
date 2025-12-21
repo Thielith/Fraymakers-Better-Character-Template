@@ -11,8 +11,6 @@
 //          if you were to use the value directly in the function, then future you might not know what it corresponds to.
 //          and trust me, future you will forget some aspect of your project.
 
-var testString = "eggs!";
-
 // ===== start general functions ===== 
 
     //Runs on object init
