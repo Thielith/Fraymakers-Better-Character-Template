@@ -25100,7 +25100,7 @@
     },
     {
       "$id": "18a89491-a715-4ec2-a034-bf5948de898e",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n\r\nEngine.log(testString);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n",
       "length": 1,
       "pluginMetadata": {
       },

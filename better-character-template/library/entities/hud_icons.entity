@@ -1,395 +1,215 @@
 {
-  "animations": [
-    {
-      "$id": "8654d3fa-17b6-4d72-9c14-50ca50af3c7f",
-      "layers": [
-        "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
-        "a690bceb-a151-4b51-be99-c36af1a28862"
-      ],
-      "name": "neutralSpecialCooldownIcon",
-      "pluginMetadata": {
+   "animations" : [
+      {
+         "$id" : "8654d3fa-17b6-4d72-9c14-50ca50af3c7f",
+         "layers" : [
+            "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
+            "a690bceb-a151-4b51-be99-c36af1a28862"
+         ],
+         "name" : "neutralSpecialCooldownIcon",
+         "pluginMetadata" : {}
+      },
+      {
+         "$id" : "dcef7f90-d822-4b9b-b34a-3a6625543bc7",
+         "layers" : [
+            "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
+            "f6967b7b-b2cc-4c88-a1d3-a13049485d2c"
+         ],
+         "name" : "neutralSpecialCooldownIcon_intro",
+         "pluginMetadata" : {}
+      },
+      {
+         "$id" : "c590b471-a77c-479c-8efd-6a1a94ed5994",
+         "layers" : [
+            "feeb63ba-138f-499c-8a86-5b3d01b6d585",
+            "c5eb9a50-798c-446f-8038-0873aa5fecb6"
+         ],
+         "name" : "hud_reference",
+         "pluginMetadata" : {}
       }
-    },
-    {
-      "$id": "dcef7f90-d822-4b9b-b34a-3a6625543bc7",
-      "layers": [
-        "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
-        "f6967b7b-b2cc-4c88-a1d3-a13049485d2c"
-      ],
-      "name": "neutralSpecialCooldownIcon_intro",
-      "pluginMetadata": {
+   ],
+   "export" : true,
+   "guid" : "ed353ea2-5cf8-46ef-a95e-fe9d6f1faf15",
+   "id" : "hud_icons",
+   "keyframes" : [
+      {
+         "$id" : "a498bc06-6a0e-4102-9995-33ac15a36a53",
+         "length" : 1,
+         "symbol" : "cb70ef38-3924-4768-94fb-531cd477636f",
+         "tweenType" : "LINEAR",
+         "tweened" : false,
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "8340c757-b9fc-4201-a36f-a53094bd6d19",
+         "length" : 1,
+         "symbol" : "05b3d11a-047a-43f1-ab1f-5ac42444f922",
+         "tweenType" : "LINEAR",
+         "tweened" : false,
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "6a38ff8b-b27e-47fc-8566-edd83f950c22",
+         "code" : "// Reference image of the default character hud. It can be pretty useful for positioning custom hud elements.",
+         "length" : 1,
+         "type" : "FRAME_SCRIPT"
+      },
+      {
+         "$id" : "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
+         "length" : 12,
+         "symbol" : "35f8e84e-c670-47cb-b56d-03376eca26d5",
+         "tweenType" : "EASE_OUT_QUAD",
+         "tweened" : true,
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
+         "length" : 37,
+         "symbol" : "",
+         "tweenType" : "LINEAR",
+         "tweened" : false,
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "128a9218-a693-49dc-b50e-e95100fca192",
+         "length" : 71,
+         "symbol" : "9697bee6-9ece-479d-a76d-9ffa07f48960",
+         "tweenType" : "LINEAR",
+         "tweened" : false,
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "da79b41c-ef42-4458-ab79-a2b0025f854f",
+         "code" : "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
+         "length" : 1,
+         "type" : "FRAME_SCRIPT"
+      },
+      {
+         "$id" : "93099ba5-29e6-4c97-a818-13c6cfce4501",
+         "code" : "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
+         "length" : 1,
+         "type" : "FRAME_SCRIPT"
       }
-    },
-    {
-      "$id": "c590b471-a77c-479c-8efd-6a1a94ed5994",
-      "layers": [
-        "feeb63ba-138f-499c-8a86-5b3d01b6d585",
-        "c5eb9a50-798c-446f-8038-0873aa5fecb6"
-      ],
-      "name": "hud_reference",
-      "pluginMetadata": {
+   ],
+   "layers" : [
+      {
+         "$id" : "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
+         "hidden" : false,
+         "keyframes" : [ "a498bc06-6a0e-4102-9995-33ac15a36a53" ],
+         "locked" : false,
+         "name" : "Image 0",
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "feeb63ba-138f-499c-8a86-5b3d01b6d585",
+         "hidden" : false,
+         "keyframes" : [ "8340c757-b9fc-4201-a36f-a53094bd6d19" ],
+         "locked" : false,
+         "name" : "Image Layer",
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "c5eb9a50-798c-446f-8038-0873aa5fecb6",
+         "hidden" : false,
+         "keyframes" : [ "6a38ff8b-b27e-47fc-8566-edd83f950c22" ],
+         "language" : "hscript",
+         "locked" : false,
+         "name" : "Notes",
+         "type" : "FRAME_SCRIPT"
+      },
+      {
+         "$id" : "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
+         "hidden" : false,
+         "keyframes" : [
+            "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
+            "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
+            "128a9218-a693-49dc-b50e-e95100fca192"
+         ],
+         "locked" : false,
+         "name" : "Image 0",
+         "type" : "IMAGE"
+      },
+      {
+         "$id" : "a690bceb-a151-4b51-be99-c36af1a28862",
+         "hidden" : false,
+         "keyframes" : [ "da79b41c-ef42-4458-ab79-a2b0025f854f" ],
+         "language" : "hscript",
+         "locked" : false,
+         "name" : "Notes",
+         "type" : "FRAME_SCRIPT"
+      },
+      {
+         "$id" : "f6967b7b-b2cc-4c88-a1d3-a13049485d2c",
+         "hidden" : false,
+         "keyframes" : [ "93099ba5-29e6-4c97-a818-13c6cfce4501" ],
+         "language" : "hscript",
+         "locked" : false,
+         "name" : "Notes",
+         "type" : "FRAME_SCRIPT"
       }
-    }
-  ],
-  "export": true,
-  "guid": "ed353ea2-5cf8-46ef-a95e-fe9d6f1faf15",
-  "id": "hud_icons",
-  "keyframes": [
-    {
-      "$id": "a498bc06-6a0e-4102-9995-33ac15a36a53",
-      "length": 1,
-      "pluginMetadata": {
+   ],
+   "paletteMap" : {
+      "paletteCollection" : null,
+      "paletteMap" : null
+   },
+   "pluginMetadata" : [],
+   "plugins" : [],
+   "symbols" : [
+      {
+         "$id" : "05b3d11a-047a-43f1-ab1f-5ac42444f922",
+         "alpha" : 1.0,
+         "imageAsset" : "8e75290c-7285-4103-8390-4021dcd4cf77",
+         "pivotX" : 75.0,
+         "pivotY" : 24.0,
+         "rotation" : 0.0,
+         "scaleX" : 1.0,
+         "scaleY" : 1.0,
+         "type" : "IMAGE",
+         "x" : 0.0,
+         "y" : -4.0
       },
-      "symbol": "cb70ef38-3924-4768-94fb-531cd477636f",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "b10f1058-c906-487d-bc72-fc6c3960312c",
-      "length": 1,
-      "name": "",
-      "pluginMetadata": {
+      {
+         "$id" : "cb70ef38-3924-4768-94fb-531cd477636f",
+         "alpha" : 1.0,
+         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
+         "pivotX" : 6.0,
+         "pivotY" : 6.0,
+         "rotation" : 0.0,
+         "scaleX" : 1.0,
+         "scaleY" : 1.0,
+         "type" : "IMAGE",
+         "x" : 43.0,
+         "y" : -9.0
       },
-      "type": "LABEL"
-    },
-    {
-      "$id": "b66ffc8d-d2ef-4878-b2b7-1d90b4867642",
-      "code": "",
-      "length": 1,
-      "pluginMetadata": {
+      {
+         "$id" : "35f8e84e-c670-47cb-b56d-03376eca26d5",
+         "alpha" : 0.0,
+         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
+         "pivotX" : 6.0,
+         "pivotY" : 6.0,
+         "rotation" : 0.0,
+         "scaleX" : 1.0,
+         "scaleY" : 1.0,
+         "type" : "IMAGE",
+         "x" : 43.0,
+         "y" : -9.0
       },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "4f4097cb-8a83-4106-aee3-9927dfa4d60b",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": null,
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "eccec9ec-36cc-404f-a895-457b96dca032",
-      "length": 1,
-      "name": "",
-      "pluginMetadata": {
-      },
-      "type": "LABEL"
-    },
-    {
-      "$id": "b3002f50-3595-4a6f-8e77-414c8db309eb",
-      "code": "",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "3b78902b-3af0-4299-a8aa-b3f42cc204dc",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": null,
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "8340c757-b9fc-4201-a36f-a53094bd6d19",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "symbol": "05b3d11a-047a-43f1-ab1f-5ac42444f922",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "6a38ff8b-b27e-47fc-8566-edd83f950c22",
-      "code": "// Reference image of the default character hud. It can be pretty useful for positioning custom hud elements.",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
-      "length": 12,
-      "pluginMetadata": {
-      },
-      "symbol": "35f8e84e-c670-47cb-b56d-03376eca26d5",
-      "tweenType": "EASE_OUT_QUAD",
-      "tweened": true,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
-      "length": 37,
-      "pluginMetadata": {
-      },
-      "symbol": null,
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "128a9218-a693-49dc-b50e-e95100fca192",
-      "length": 71,
-      "pluginMetadata": {
-      },
-      "symbol": "9697bee6-9ece-479d-a76d-9ffa07f48960",
-      "tweenType": "LINEAR",
-      "tweened": false,
-      "type": "IMAGE"
-    },
-    {
-      "$id": "da79b41c-ef42-4458-ab79-a2b0025f854f",
-      "code": "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "93099ba5-29e6-4c97-a818-13c6cfce4501",
-      "code": "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
-      "length": 1,
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    }
-  ],
-  "layers": [
-    {
-      "$id": "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
-      "hidden": false,
-      "keyframes": [
-        "a498bc06-6a0e-4102-9995-33ac15a36a53"
-      ],
-      "locked": false,
-      "name": "Image 0",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
-    {
-      "$id": "2abb9f50-9bbd-4778-8724-6b7b387085c8",
-      "hidden": false,
-      "keyframes": [
-        "b10f1058-c906-487d-bc72-fc6c3960312c"
-      ],
-      "locked": false,
-      "name": "Labels",
-      "pluginMetadata": {
-      },
-      "type": "LABEL"
-    },
-    {
-      "$id": "f0f79927-6b71-4dbb-a1a7-f96563bba8fc",
-      "hidden": false,
-      "keyframes": [
-        "b66ffc8d-d2ef-4878-b2b7-1d90b4867642"
-      ],
-      "language": "",
-      "locked": false,
-      "name": "Scripts",
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "ea670076-a793-4975-97bb-c966baabf2b7",
-      "hidden": false,
-      "keyframes": [
-        "4f4097cb-8a83-4106-aee3-9927dfa4d60b"
-      ],
-      "locked": false,
-      "name": "Image 0",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
-    {
-      "$id": "d66f64df-d94b-4d4f-9fbf-362eb3edb236",
-      "hidden": false,
-      "keyframes": [
-        "eccec9ec-36cc-404f-a895-457b96dca032"
-      ],
-      "locked": false,
-      "name": "Labels",
-      "pluginMetadata": {
-      },
-      "type": "LABEL"
-    },
-    {
-      "$id": "e0e86409-8dae-4414-a310-013dab85eeaa",
-      "hidden": false,
-      "keyframes": [
-        "b3002f50-3595-4a6f-8e77-414c8db309eb"
-      ],
-      "language": "",
-      "locked": false,
-      "name": "Scripts",
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "0e9b9f0b-32b8-49bd-9379-b8147b8f236b",
-      "hidden": false,
-      "keyframes": [
-        "3b78902b-3af0-4299-a8aa-b3f42cc204dc"
-      ],
-      "locked": false,
-      "name": "Image 0",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
-    {
-      "$id": "feeb63ba-138f-499c-8a86-5b3d01b6d585",
-      "hidden": false,
-      "keyframes": [
-        "8340c757-b9fc-4201-a36f-a53094bd6d19"
-      ],
-      "locked": false,
-      "name": "Image Layer",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
-    {
-      "$id": "c5eb9a50-798c-446f-8038-0873aa5fecb6",
-      "hidden": false,
-      "keyframes": [
-        "6a38ff8b-b27e-47fc-8566-edd83f950c22"
-      ],
-      "language": "hscript",
-      "locked": false,
-      "name": "Notes",
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
-      "hidden": false,
-      "keyframes": [
-        "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
-        "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
-        "128a9218-a693-49dc-b50e-e95100fca192"
-      ],
-      "locked": false,
-      "name": "Image 0",
-      "pluginMetadata": {
-      },
-      "type": "IMAGE"
-    },
-    {
-      "$id": "a690bceb-a151-4b51-be99-c36af1a28862",
-      "hidden": false,
-      "keyframes": [
-        "da79b41c-ef42-4458-ab79-a2b0025f854f"
-      ],
-      "language": "hscript",
-      "locked": false,
-      "name": "Notes",
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    },
-    {
-      "$id": "f6967b7b-b2cc-4c88-a1d3-a13049485d2c",
-      "hidden": false,
-      "keyframes": [
-        "93099ba5-29e6-4c97-a818-13c6cfce4501"
-      ],
-      "language": "hscript",
-      "locked": false,
-      "name": "Notes",
-      "pluginMetadata": {
-      },
-      "type": "FRAME_SCRIPT"
-    }
-  ],
-  "paletteMap": {
-    "paletteCollection": null,
-    "paletteMap": null
-  },
-  "pluginMetadata": {
-  },
-  "plugins": [
-  ],
-  "symbols": [
-    {
-      "$id": "05b3d11a-047a-43f1-ab1f-5ac42444f922",
-      "alpha": 1,
-      "imageAsset": "8e75290c-7285-4103-8390-4021dcd4cf77",
-      "pivotX": 75,
-      "pivotY": 24,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": 0,
-      "y": -4
-    },
-    {
-      "$id": "cb70ef38-3924-4768-94fb-531cd477636f",
-      "alpha": 1,
-      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
-      "pivotX": 6,
-      "pivotY": 6,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": 43,
-      "y": -9
-    },
-    {
-      "$id": "35f8e84e-c670-47cb-b56d-03376eca26d5",
-      "alpha": 0,
-      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
-      "pivotX": 6,
-      "pivotY": 6,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": 43,
-      "y": -9
-    },
-    {
-      "$id": "9697bee6-9ece-479d-a76d-9ffa07f48960",
-      "alpha": 1,
-      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
-      "pivotX": 6,
-      "pivotY": 6,
-      "pluginMetadata": {
-      },
-      "rotation": 0,
-      "scaleX": 1,
-      "scaleY": 1,
-      "type": "IMAGE",
-      "x": 43,
-      "y": -9
-    }
-  ],
-  "tags": [
-  ],
-  "terrains": [
-  ],
-  "tilesets": [
-  ],
-  "version": 14
+      {
+         "$id" : "9697bee6-9ece-479d-a76d-9ffa07f48960",
+         "alpha" : 1.0,
+         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
+         "pivotX" : 6.0,
+         "pivotY" : 6.0,
+         "rotation" : 0.0,
+         "scaleX" : 1.0,
+         "scaleY" : 1.0,
+         "type" : "IMAGE",
+         "x" : 43.0,
+         "y" : -9.0
+      }
+   ],
+   "tags" : [],
+   "terrains" : [],
+   "tilesets" : [],
+   "version" : 14
 }
