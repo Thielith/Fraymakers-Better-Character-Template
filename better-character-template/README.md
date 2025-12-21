@@ -57,6 +57,7 @@ special_up: {  // updated on frame 6, 7
 - (gaming.\_\_) Added explanation of various aspects in a separate file because JSON doesn't allow comments.
 
 **Character.entity**
+- Added a screenshot to point new users to where the animation tab is.
 - Made down special implementation not stupid. (it does not need a separate animation for looping and end lag)
 - Moved setting-an-opponent's-thrown-frame code into a function cause it got used a lot.
 - (gaming.\_\_) Added separators to animation list.

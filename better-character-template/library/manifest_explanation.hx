@@ -7,10 +7,10 @@
 
 {
   // Make the resource ID something unique, it determines the name of the character's .fra file when you export them.
-  "resourceId": "fraynkie",
+  "resourceId": "thielith_better-template_replace-me",
   "content": [{
     // All entities have an ID that can be called upon for spawning them in.
-    "id": "fraynkie",
+    "id": "character",
     "name": "Fraynkie",
     "description": "Just a sweet little baby",
     "type": "character",
@@ -18,12 +18,13 @@
     // Scripts also have IDs, here they need to match the ID assigned to their actual file.
     // There's no real reason to actually change the character related IDs at all, but you can if you want.
     //    Personally, I'd recommend it for organization (-Thielith)
-    "objectStatsId": "fraynkieCharacterStats",     // The entity's object stats script
-    "animationStatsId": "fraynkieAnimationStats",  // The entity's animation stats script
-    "hitboxStatsId": "fraynkieHitboxStats",        // The entity's attack hitbox stats script
-    "scriptId": "fraynkieScript",                  // The entity's main script
-    "costumesId": "fraynkieCostumes",              // The entity's palette file
-    "aiId": "fraynkieAi",                          // A character's custom AI script
+    "objectStatsId": "characterStats",     // The entity's object stats script
+    "animationStatsId": "animationStats",  // The entity's animation stats script
+    "hitboxStatsId": "hitboxStats",        // The entity's attack hitbox stats script
+    "scriptId": "characterScript",                  // The entity's main script
+    "costumesId": "costumes",              // The entity's palette file
+    "aiId": "ai",                          // A character's custom AI script
+
     "metadata": {
       "ui":{
         "entityId":"menu",
@@ -67,17 +68,17 @@
     }
   },{
     // Unlike the other main scripts, the character's custom AI script is technically a seperate thing from the character itself.
-    "id": "fraynkieAi",
+    "id": "ai",
     "type": "characterAi",
-    "scriptId": "fraynkieAiScript"
+    "scriptId": "aiScript"
   },{
     // The projectile Fraynkie uses for neutral special. As it's a different entity from the character, it has its own unique IDs for the entity and scripts.
-    "id": "fraynkieProjectile",
+    "id": "projectile",
     "type": "projectile",
-    "objectStatsId": "fraynkieProjectileStats",
-    "animationStatsId": "fraynkieProjectileAnimationStats",
-    "hitboxStatsId": "fraynkieProjectileHitboxStats",
-    "scriptId": "fraynkieProjectileScript",
-    "costumesId": "fraynkieCostumes"
+    "objectStatsId": "projectileStats",
+    "animationStatsId": "projectileAnimationStats",
+    "hitboxStatsId": "projectileHitboxStats",
+    "scriptId": "projectileScript",
+    "costumesId": "costumes"
   }]
 }

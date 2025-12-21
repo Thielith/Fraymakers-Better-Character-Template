@@ -40853,7 +40853,7 @@
       "length": 1,
       "pluginMetadata": {
       },
-      "symbol": null,
+      "symbol": "f32f02e8-88d4-43e0-a508-a0790c6c4c83",
       "tweenType": "LINEAR",
       "tweened": false,
       "type": "IMAGE"
@@ -104696,6 +104696,21 @@
       "type": "COLLISION_BOX",
       "x": -30.424885289353576,
       "y": -91.07935858455645
+    },
+    {
+      "$id": "f32f02e8-88d4-43e0-a508-a0790c6c4c83",
+      "alpha": 1,
+      "imageAsset": "4cfaa777-727d-430b-b0f9-67c3518dd55e",
+      "pivotX": 710,
+      "pivotY": 343,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 0.25,
+      "scaleY": 0.25,
+      "type": "IMAGE",
+      "x": -176,
+      "y": -86
     }
   ],
   "tags": [

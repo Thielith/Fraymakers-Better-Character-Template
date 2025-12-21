@@ -1,16 +1,19 @@
 {
-  "resourceId": "fraynkie",
+  "resourceId": "thielith_better-template_replace-me",
   "content": [{
+
     "id": "character",
     "name": "Fraynkie",
     "description": "Just a sweet little baby",
     "type": "character",
+    
     "objectStatsId": "characterStats",
     "animationStatsId": "animationStats",
     "hitboxStatsId": "hitboxStats",
     "scriptId": "characterScript",
     "costumesId": "costumes",
     "aiId": "ai",
+
     "metadata":{
       "ui":{
         "entityId": "menu",
@@ -18,6 +21,7 @@
           "animation": "full",
           "animation_icon": "icon",
           "animation_icon_no_palette": "icon_no_palette",
+          
           "x_offset": 0,
           "y_offset": 38,
           "x_offset_door": 0,

@@ -16,10 +16,13 @@
     //Runs on object init
     function initialize(){
         // not used for this character but can be used execute important code that would be skipped during the transition
-        // you can check what state you're in with inState()
+        // between two animations with a landType of LINK_FRAMES.  (e.g special_down_air to special_down).
+        // you can check what state you end up in with inState()
         // self.addEventListener(GameObjectEvent.LINK_FRAMES, handleLinkFrames, {persistent:true});
 
-        // Exports can be used to "export" variables and functions between entites
+        // Exports can be used to "export" variables and functions between entites.
+        //      e.g  a projectile needs to know if your character is in the FALL state for some reason
+        //      e.g  compatibility with a different custom content creation
         // self.exports = {
         //     variableExample: neutralSpecialCooldownIcon,
         //     functionExample: clutchButtonPressed
@@ -34,23 +37,6 @@
         }
 
         handleHUDiconAnimations();
-    }
-
-    // Runs when reading inputs (before determining character state, update, framescript, etc.)
-    function inputUpdateHook(pressedControls:ControlsObject, heldControls:ControlsObject) {
-        // This also runs when updating the buffer, below code should only be run on input tick
-        if (self.isFirstInputUpdate()) {
-            clutchButtonWasHeld.set(clutchButtonIsHeld.get());
-            clutchButtonIsHeld.set(heldControls.SHIELD2);
-        }
-
-        // This runs when reading the buffer and on input tick -
-        // Disable SHIELD2 input so engine will not see the shield2 input for shield/airdash
-        //
-        // self.getHeldControls().SHIELD2 will be false too
-        // so must use clutchButtonHeld to check for clutch input
-        pressedControls.SHIELD2 = false;
-        heldControls.SHIELD2 = false;
     }
 
     function onTeardown() {
@@ -124,6 +110,26 @@
         disableClutch();
     }
 
+    // Runs when reading inputs (before determining character state, update, framescript, etc.)
+    // here, it's only used for clutch stuff, but it can be used for any tasks where you gotta mess with the inputs.
+    //      e.g  your character fills a meter using a special move which makes them go into a super state
+    //           and you don't want the player to be able to charge the meter while the super state is active
+    function inputUpdateHook(pressedControls:ControlsObject, heldControls:ControlsObject) {
+        // This also runs when updating the buffer, below code should only be run on input tick
+        if (self.isFirstInputUpdate()) {
+            clutchButtonWasHeld.set(clutchButtonIsHeld.get());
+            clutchButtonIsHeld.set(heldControls.SHIELD2);
+        }
+
+        // This runs when reading the buffer and on input tick -
+        // Disable SHIELD2 input so engine will not see the shield2 input for shield/airdash
+        //
+        // self.getHeldControls().SHIELD2 will be false too
+        // so must use clutchButtonHeld to check for clutch input
+        pressedControls.SHIELD2 = false;
+        heldControls.SHIELD2 = false;
+    }
+
 // ===== End Clutch logic =====
 
 
@@ -131,6 +137,7 @@
 // ===== Neutral Special =====
     // Tracks active Neutral Special projectile (in case we need to handle any special cases)
     var projectile = self.makeObject(null); 
+    
     function spawnAndFireProjectile(){
         projectile.set(
             match.createProjectile(self.getResource().getContent("projectile"), self)
