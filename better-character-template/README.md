@@ -48,6 +48,7 @@ special_up: {  // updated on frame 6, 7
 	- *I (Thielith) might have missed some.  Let me know if I did.*
 - (gaming.\_\_) Added reference image of HUD to some places.
 	- *Yes, its the latest version.*
+- Added folders for each animation so you don't have to make them yourself.
 
 **Project**
 - (gaming.\_\_) Framerate set to 180.
@@ -58,7 +59,6 @@ special_up: {  // updated on frame 6, 7
 **Character.entity**
 - Made down special implementation not stupid. (it does not need a separate animation for looping and end lag)
 - Moved setting-an-opponent's-thrown-frame code into a function cause it got used a lot.
-- Put "magic numbers" into variables to better describe what they're doing.
 - (gaming.\_\_) Added separators to animation list.
 - (gaming.\_\_) Removed the multi-hit neutral aerial variant.
 - (gaming.\_\_) Balance changes.
@@ -73,7 +73,7 @@ special_up: {  // updated on frame 6, 7
 
 **Script.hx**
    - Renamed clutch stuff for clarity.
-	   - Also changed loggic to use `update()` following gaming.\_\_'s example
+	   - Also changed logic to use `update()` following gaming.\_\_'s example
    - Renamed projectile stuff for clarity.
    - Moved `jab3loop()` logic to `jab3` framescript.
    - `handleLinkFrames()` doesn't do anything now due to balance changes, so it is commented out so people know the functionality still exists.
@@ -120,6 +120,6 @@ special_up: {  // updated on frame 6, 7
 
 
 ## Credits / Thanks
-- Thielith - Current maintainer
-- gaming.__ - For letting me absorb their own Better Template into this one
-
+- Thielith - Current maintainer.
+- gaming.__ - For letting me absorb their own Better Template into this one.
+- Whimz - For giving good feedback.

@@ -1,7 +1,7 @@
 {
   "export": true,
   "guid": "f2e972df-e167-44f4-b12a-a846a31fe71a",
-  "id": "fraynkieProjectileAnimationStats",
+  "id": "projectileAnimationStats",
   "language": "hscript",
   "pluginMetadata": {
   },

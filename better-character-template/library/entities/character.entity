@@ -1,6 +1,16 @@
 {
   "animations": [
     {
+      "$id": "b2d05630-8488-47ec-98c9-242c6a2ee210",
+      "layers": [
+        "d458077c-c575-49e8-998d-9f9837d72409",
+        "e35bdec0-4915-46ec-8735-8e281fdb1791"
+      ],
+      "name": "----- Basics -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "9639a882-3c8f-4400-93ca-e53fea62e79f",
       "layers": [
         "e0276f45-c489-4185-8312-1aad404d8086",
@@ -905,6 +915,18 @@
       }
     },
     {
+      "$id": "8c8e98d1-7b8b-4b93-8f8b-8509c59506db",
+      "layers": [
+        "8d2d6079-6bf6-4e8b-abbc-3c390f5d90c6",
+        "e9ecb661-70c5-4ebe-8062-f98f560bf2d7",
+        "60ef0035-92c8-41dd-8d98-a2ba120a5616",
+        "54667827-850e-434a-9899-e26388167008"
+      ],
+      "name": "airdash_land",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "323bf52b-a0be-4ed2-8d67-3a61638f4114",
       "layers": [
         "5edcdd63-cdb8-41eb-b9c3-c74e1892b9d2",
@@ -917,14 +939,14 @@
       }
     },
     {
-      "$id": "8c8e98d1-7b8b-4b93-8f8b-8509c59506db",
+      "$id": "431b8493-0d11-4066-be60-b3e82c6ef19c",
       "layers": [
-        "8d2d6079-6bf6-4e8b-abbc-3c390f5d90c6",
-        "e9ecb661-70c5-4ebe-8062-f98f560bf2d7",
-        "60ef0035-92c8-41dd-8d98-a2ba120a5616",
-        "54667827-850e-434a-9899-e26388167008"
+        "cab83a7d-20a2-4835-9a02-7323e8f110fb",
+        "cea5ddc1-2c02-4467-ad51-40ae4f22b136",
+        "d49f4e22-e1c8-42a8-bde1-2a45aae01310",
+        "4483aedb-d562-4d34-ae0c-f7d911eab7cd"
       ],
-      "name": "airdash_land",
+      "name": "airdash_land_whiff",
       "pluginMetadata": {
       }
     },
@@ -951,18 +973,6 @@
         "8da37cf7-37fd-45f0-b716-b289bd08d5b9"
       ],
       "name": "airdash_freefall_whiff",
-      "pluginMetadata": {
-      }
-    },
-    {
-      "$id": "431b8493-0d11-4066-be60-b3e82c6ef19c",
-      "layers": [
-        "cab83a7d-20a2-4835-9a02-7323e8f110fb",
-        "cea5ddc1-2c02-4467-ad51-40ae4f22b136",
-        "d49f4e22-e1c8-42a8-bde1-2a45aae01310",
-        "4483aedb-d562-4d34-ae0c-f7d911eab7cd"
-      ],
-      "name": "airdash_land_whiff",
       "pluginMetadata": {
       }
     },
@@ -1656,7 +1666,7 @@
   ],
   "export": true,
   "guid": "6a016593-6881-4b91-a22a-74a6a70563f1",
-  "id": "fraynkie",
+  "id": "character",
   "keyframes": [
     {
       "$id": "983774c4-7414-49df-bad8-5761ea0b7f0e",
@@ -2124,7 +2134,7 @@
     },
     {
       "$id": "9fd497b9-846f-4202-9e6d-030b117be4a1",
-      "code": "//gives the character a speed boost forward (to set backward speed put a negative number in the setXSpeed parenthesis)\r\nself.setXSpeed(DASH_ATK_BOOST_X);",
+      "code": "// gives the character a speed boost forward (to set backward speed put a negative number in the setXSpeed parenthesis)\r\nself.setXSpeed(12);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -2370,7 +2380,7 @@
     },
     {
       "$id": "9990ef50-e834-42b9-96e8-39bef2b0bcfe",
-      "code": "//blink 1\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_ONE){ \r\n  self.playFrame(1);\r\n}",
+      "code": "//blink 1\r\n\r\n// 1/5 chance to blink\r\nif(Random.getValue() >= 0.20){ \r\n  self.playFrame(1);\r\n}",
       "length": 1,
       "pluginMetadata": {
       },
@@ -6538,7 +6548,7 @@
     },
     {
       "$id": "9d7f8c68-2402-4cd6-bbfe-bcb86a4ddaa4",
-      "code": "//blink 2\r\n\r\nif(Random.getValue() >= CHANCE_BLINK_TWO){ \r\n  self.playFrame(1);\r\n}\r\n",
+      "code": "//blink 2\r\n\r\n// 1/4 chance to blink again after the first blink\r\n// so, 1/4 * 1/5 chance to blink twice\r\nif(Random.getValue() >= 0.25){ \r\n  self.playFrame(1);\r\n}\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -13042,7 +13052,7 @@
     },
     {
       "$id": "d0badb76-dabd-4cdc-aa10-b32e68267a98",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(DOWN_TILT_BOOST_X);\r\n",
+      "code": "// boosts fraynkie forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(10);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -14802,7 +14812,7 @@
     },
     {
       "$id": "af412eda-c5c7-40f7-aa58-98d688d96f84",
-      "code": "//script which tells the character to go to the land animation designated in the AnimationStats.hx for this attack if you land during it.\r\nCommon.setAutocancel(false);\r\n//gives the character a speed boost forward and down (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a negative number in the setYSpeed parenthesis)\r\nself.setXSpeed(DOWN_AIR_SPEED_X);\r\nself.setYSpeed(DOWN_AIR_SPEED_Y);",
+      "code": "//script which tells the character to go to the land animation designated in the AnimationStats.hx for this attack if you land during it.\r\nCommon.setAutocancel(false);\r\n\r\n// gives the character a speed boost forward and down (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a negative number in the setYSpeed parenthesis)\r\nself.setXSpeed(5);\r\nself.setYSpeed(18);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -15450,7 +15460,7 @@
     },
     {
       "$id": "72ebae94-6cb3-48bc-8a4c-3ac428881849",
-      "code": "//moves the character 40 pixels forward on the x axis, and 0 pixels on the y axis\r\nself.move(DASH_ATK_SHIFT_X, DASH_ATK_SHIFT_Y);\r\n//plays a generic crash sound\r\nAudioClip.play(GlobalSfx.CRASH_2);",
+      "code": "//moves the character 40 pixels forward on the x axis, and 0 pixels on the y axis\r\nself.move(40, 0);\r\n//plays a generic crash sound\r\nAudioClip.play(GlobalSfx.CRASH_2);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -16648,7 +16658,7 @@
     },
     {
       "$id": "375b7a4a-8114-46e4-ae4e-e0195e2dd1ae",
-      "code": "self.setXSpeed(LEDGE_ATK_SPEED);\r\n",
+      "code": "// give fraynkie a boost forward\r\nself.setXSpeed(10);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -18538,7 +18548,7 @@
     },
     {
       "$id": "1470786b-1d99-4464-9365-7be0fe69a67a",
-      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_ONE_X);\r\n",
+      "code": "//boosts fraynkie forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8.5);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -18554,7 +18564,7 @@
     },
     {
       "$id": "6d8cd1bb-1d5f-4ede-b293-c95e8fc2c46c",
-      "code": "//boosts x speed forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(FORWARD_STRONG_ATK_BOOST_TWO_X);",
+      "code": "//boosts fraynkie forward by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(6.5);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -20864,7 +20874,7 @@
     },
     {
       "$id": "0df40d2c-132f-4cab-8618-33d8c92ad432",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X);\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives fraynkie a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(5);\r\nself.setYSpeed(-21);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -23892,7 +23902,7 @@
     },
     {
       "$id": "47d0efeb-f48b-40df-9ec5-cc69350c0aa8",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -25050,7 +25060,7 @@
     },
     {
       "$id": "54d21cec-f587-4d6c-b11d-fe3e0549cba1",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -25074,7 +25084,7 @@
     },
     {
       "$id": "b2aa7aa6-e6f0-43c6-b897-4f74c489beeb",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -25090,7 +25100,7 @@
     },
     {
       "$id": "18a89491-a715-4ec2-a034-bf5948de898e",
-      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);",
+      "code": "//boosts x speed horizontally by the positive number in the parenthesis (for backward use a negative number)\r\nself.setXSpeed(8);\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_1);\r\n\r\nEngine.log(testString);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -38226,7 +38236,7 @@
     },
     {
       "$id": "c2c00646-7aea-4cef-ab47-299041964bfe",
-      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(UP_SPECIAL_BOOST_X);\r\nself.setYSpeed(UP_SPECIAL_BOOST_Y);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
+      "code": "//script which resets any previous momentum your character had\r\nself.resetMomentum();\r\n\r\n//gives fraynkie a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parenthesis, and to go up set a positive number in the setYSpeed parenthesis)\r\nself.setXSpeed(5);\r\nself.setYSpeed(-21);\r\n\r\n//removes your ability to influence your character's movement in the ground or air\r\nself.updateAnimationStats({allowMovement:false});\r\n\r\n//plays a generic whoosh sound\r\nAudioClip.play(GlobalSfx.WHOOSH_3);\r\n",
       "length": 1,
       "pluginMetadata": {
       },
@@ -38674,7 +38684,7 @@
     },
     {
       "$id": "473cd39d-3aea-4fcb-b1df-a1cc834087a8",
-      "code": "//gives the character a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(SIDE_SPECIAL_BOOST_X);\r\nself.setYSpeed(SIDE_SPECIAL_BOOST_Y);",
+      "code": "//gives fraynkie a speed boost forward and up (to set backward speed put a negative number in the setXSpeed parentheses, and to go up set a positive number in the setYSpeed parentheses)\r\nself.setXSpeed(8);\r\nself.setYSpeed(-15);",
       "length": 1,
       "pluginMetadata": {
       },
@@ -38880,7 +38890,7 @@
     },
     {
       "$id": "e6e7c5d1-3955-4864-9864-3c20b391eb7c",
-      "code": "//Plays a specific voice clip with a 50% probability of playing\r\nif(Random.getValue() >= FORWARD_STRONG_ATK_CHANCE_CLIP){ \r\n  AudioClip.play(self.getResource().getContent(\"heavyattack1\"), { channel: \"voice\" });\r\n}",
+      "code": "//Plays a specific voice clip with a 50% probability of playing\r\nif(Random.getValue() >= 0.50){ \r\n  AudioClip.play(self.getResource().getContent(\"heavyattack1\"), { channel: \"voice\" });\r\n}",
       "length": 1,
       "pluginMetadata": {
       },
@@ -42545,6 +42555,24 @@
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "4e7bd677-20ca-4c1a-9897-670104654e8d",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "43734f85-a8f3-4d70-bc22-79c8ec079f8f",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
     }
   ],
   "layers": [
@@ -54973,6 +55001,31 @@
       "hidden": false,
       "keyframes": [
         "e0a2ee88-7193-4835-a847-2a31fc488c04"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "e35bdec0-4915-46ec-8735-8e281fdb1791",
+      "hidden": false,
+      "keyframes": [
+        "4e7bd677-20ca-4c1a-9897-670104654e8d"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "d458077c-c575-49e8-998d-9f9837d72409",
+      "hidden": false,
+      "keyframes": [
+        "43734f85-a8f3-4d70-bc22-79c8ec079f8f"
       ],
       "locked": false,
       "name": "Image Layer",

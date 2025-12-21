@@ -1,23 +1,23 @@
 {
   "resourceId": "fraynkie",
   "content": [{
-    "id": "fraynkie",
+    "id": "character",
     "name": "Fraynkie",
     "description": "Just a sweet little baby",
     "type": "character",
-    "objectStatsId": "fraynkieCharacterStats",
-    "animationStatsId": "fraynkieAnimationStats",
-    "hitboxStatsId": "fraynkieHitboxStats",
-    "scriptId": "fraynkieScript",
-    "costumesId": "fraynkieCostumes",
-    "aiId": "fraynkieAi",
-    "metadata": {
+    "objectStatsId": "characterStats",
+    "animationStatsId": "animationStats",
+    "hitboxStatsId": "hitboxStats",
+    "scriptId": "characterScript",
+    "costumesId": "costumes",
+    "aiId": "ai",
+    "metadata":{
       "ui":{
-        "entityId":"menu",
+        "entityId": "menu",
         "render":{
-          "animation":"full",
-          "animation_icon":"icon",
-          "animation_icon_no_palette":"icon_no_palette",
+          "animation": "full",
+          "animation_icon": "icon",
+          "animation_icon_no_palette": "icon_no_palette",
           "x_offset": 0,
           "y_offset": 38,
           "x_offset_door": 0,
@@ -26,38 +26,38 @@
           "y_offset_door_ffa": 0
         },
         "hud":{
-          "animation":"hud_neutral",
+          "animation": "hud_neutral",
           "animation_front": "hud_neutral_front",
-          "animation_happy":"hud_happy",
-          "animation_happy_front":"hud_happy_front",
-          "animation_sad":"hud_sad",
-          "animation_sad_front":"hud_sad_front",
-          "animation_angry":"hud_angry",
-          "animation_angry_front":"hud_angry_front",
-          "animation_hurt":"hud_hurt",
-          "animation_hurt_front":"hud_hurt_front",
+          "animation_happy": "hud_happy",
+          "animation_happy_front": "hud_happy_front",
+          "animation_sad": "hud_sad",
+          "animation_sad_front": "hud_sad_front",
+          "animation_angry": "hud_angry",
+          "animation_angry_front": "hud_angry_front",
+          "animation_hurt": "hud_hurt",
+          "animation_hurt_front": "hud_hurt_front",
           "animation_stock_icon": "stock"
         },
         "css":{
-          "animation":"css",
+          "animation": "css",
           "info":{
-            "game":"Fraymakers (Early Access)",
-            "description":"Just a sweet little baby."
+            "game": "Fraymakers (Early Access)",
+            "description": "Just a sweet little baby."
           }
         }
       }
     }
   },{
-    "id": "fraynkieAi",
+    "id": "ai",
     "type": "characterAi",
-    "scriptId": "fraynkieAiScript"
+    "scriptId": "aiScript"
   },{
-    "id": "fraynkieProjectile",
+    "id": "projectile",
     "type": "projectile",
-    "objectStatsId": "fraynkieProjectileStats",
-    "animationStatsId": "fraynkieProjectileAnimationStats",
-    "hitboxStatsId": "fraynkieProjectileHitboxStats",
-    "scriptId": "fraynkieProjectileScript",
-    "costumesId": "fraynkieCostumes"
+    "objectStatsId": "projectileStats",
+    "animationStatsId": "projectileAnimationStats",
+    "hitboxStatsId": "projectileHitboxStats",
+    "scriptId": "projectileScript",
+    "costumesId": "costumes"
   }]
 }

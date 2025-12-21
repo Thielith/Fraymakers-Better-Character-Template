@@ -1,7 +1,7 @@
 {
   "export": true,
   "guid": "07e4a81f-41d3-4348-a4c7-f6cedec3b7b3",
-  "id": "fraynkieProjectileScript",
+  "id": "projectileScript",
   "language": "hscript",
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {

@@ -1,6 +1,6 @@
 // Projectile stats for Character Template Projectile
 {
-	spriteContent: self.getResource().getContent("fraynkieProjectile"),
+	spriteContent: self.getResource().getContent("projectile"),
 	stateTransitionMapOverrides: [
 		PState.ACTIVE => {
 			animation: "idle"

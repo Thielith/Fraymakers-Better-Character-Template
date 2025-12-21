@@ -44,12 +44,14 @@ function update() {
 // =====================================================
 function createAfterImage(){
 	match.createVfx(new VfxStats({
-		spriteContent: self.getResource().getContent("fraynkieProjectile"),
+		spriteContent: self.getResource().getContent("projectile"),
 		animation: "idle",
 		relativeWith: false,
 		x: self.getX(), y: self.getY(),
+		scaleX: self.flipX(1),
 		timeout: afterImageLife,
 		fadeOut: true,
+		flipWith: true,
 		layer: VfxLayer.CHARACTERS_BACK
 	}));
 }

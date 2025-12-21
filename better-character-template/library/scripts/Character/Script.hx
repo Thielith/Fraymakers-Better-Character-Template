@@ -6,54 +6,12 @@
 //      e.g  stand/Framescript:70 means the stand animation, on the layer named Framescript, on frame 70
 //      e.g  special_side/Framescript:10, 15 means the special_side animation, on the layer named Framescript, on frame 10 and 15
 //
-// - if you define a variable without "var", you can reference them in Framescript layer keyframes
-// - you don't __need__ to have these magic number definitions and can just input the number directly.
-//   however, doing this makes it more clear as to what the numbers actually mean
+// - to follow best programming practices, instead of assigning numbers directly, i'd recommend creating a variable and using that in place of the number.
+//      e.g the value of NEUTRAL_SPECIAL_COOLDOWN is the number of frames the cooldown lasts.
+//          if you were to use the value directly in the function, then future you might not know what it corresponds to.
+//          and trust me, future you will forget some aspect of your project.
 
-// --- Magic Number Definitions ---
-    CHANCE_BLINK_ONE = 0.20;  // 1/5 chance to blink, used in stand/Framescript:70
-    CHANCE_BLINK_TWO = 0.25;  // 1/4 chance to blink twice after blinking once, used in stand/Framescript:70
-
-    LEDGE_ATK_SPEED = 10;  // used in ledge_attack/Framescript:8
-
-    DOWN_AIR_SPEED_X = 5;   // used in aerial_down/Framescript:10
-    DOWN_AIR_SPEED_Y = 18;  // used in aerial_down/Framescript:10
-
-    DASH_ATK_BOOST_X = 12;  // used in dash_attack/Framescript:1
-    DASH_ATK_SHIFT_X = 40;  // used in dash_attack/Framescript:16
-    DASH_ATK_SHIFT_Y = 0;   // used in dash_attack/Framescript:16
-
-    DOWN_TILT_BOOST_X = 10;  // used in tilt_down/Framescript:8
-
-    FORWARD_STRONG_ATK_CHANCE_CLIP = 0.50;  // used in strong_forward_attack/Framescript:2
-    FORWARD_STRONG_ATK_BOOST_ONE_X = 8.5;   // used in strong_forward_attack/Framescript:3
-    FORWARD_STRONG_ATK_BOOST_TWO_X = 6.5;   // used in strong_forward_attack/Framescript:14
-
-    UP_SPECIAL_BOOST_X = 5;    // used in special_up/Framescript:6, special_up_air/Framescript:6
-    UP_SPECIAL_BOOST_Y = -21;  // used in special_up/Framescript:6, special_up_air/Framescript:6
-
-    SIDE_SPECIAL_BOOST_X = 8;    // used in special_side/Framescript:10, 15, 19, 23, 27
-    SIDE_SPECIAL_BOOST_Y = -15;  // used in special_side/Framescript:10
-    SIDE_SPECIAL_SHIELD_HIT_SPEED_PENALTY = -4;  // used in onSideSpecialShieldHit() in this script 
-// --- End Magic Number Definitions ---
-
-
-// Tracks active Neutral Special projectile (in case we need to handle any special cases)
-var projectile = self.makeObject(null); 
-
-var disableNSpecStatusEffect = self.makeObject(null);
-var NEUTRAL_SPECIAL_COOLDOWN:Int = 90;
-var NSPEC_PROJ_X_OFFSET:Int = 40;
-var NSPEC_PROJ_Y_OFFSET:Int = -50;
-
-var clutchButtonIsHeld = self.makeBool(false);  // Check if the clutch button is held current frame
-var clutchButtonWasHeld = self.makeBool(false); // Check if the clutch button was held prev. frame
-var clutchEnabled = self.makeBool(true);        // if we can clutch
-
-// HUD icons
-var neutralSpecialCooldownIcon:Sprite = null; // The hud icon used for visualizing neutral special's cooldown
-var darkenFilter:HsbcColorFilter = new HsbcColorFilter(); // The filter applied to the hud icons during their respective move's cooldown
-darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
+var testString = "eggs!";
 
 // ===== start general functions ===== 
 
@@ -103,6 +61,10 @@ darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
 
 
 // ===== HUD icon setup =====
+    var neutralSpecialCooldownIcon:Sprite = null; // The hud icon used for visualizing neutral special's cooldown
+    var darkenFilter:HsbcColorFilter = new HsbcColorFilter(); // The filter applied to the hud icons during their respective move's cooldown
+    darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
+
     function setupHUD(){
         neutralSpecialCooldownIcon = Sprite.create(self.getResource().getContent("hud_icons"));
         self.getDamageCounterContainer().addChild(neutralSpecialCooldownIcon);
@@ -130,6 +92,10 @@ darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
 
 
 // ===== Clutch logic =====
+    var clutchButtonIsHeld = self.makeBool(false);  // Check if the clutch button is held current frame
+    var clutchButtonWasHeld = self.makeBool(false); // Check if the clutch button was held prev. frame
+    var clutchEnabled = self.makeBool(true);        // if we can clutch
+
     function clutchButtonPressed() {
         return !clutchButtonWasHeld.get() && clutchButtonIsHeld.get();
     }
@@ -165,9 +131,11 @@ darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
 
 
 // ===== Neutral Special =====
+    // Tracks active Neutral Special projectile (in case we need to handle any special cases)
+    var projectile = self.makeObject(null); 
     function spawnAndFireProjectile(){
         projectile.set(
-            match.createProjectile(self.getResource().getContent("fraynkieProjectile"), self)
+            match.createProjectile(self.getResource().getContent("projectile"), self)
         );
         
         projectile.get().setX(
@@ -177,6 +145,11 @@ darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
             self.getY() + NSPEC_PROJ_Y_OFFSET
         );
     }
+
+    var disableNSpecStatusEffect = self.makeObject(null);
+    var NEUTRAL_SPECIAL_COOLDOWN:Int = 90;
+    var NSPEC_PROJ_X_OFFSET:Int = 40;
+    var NSPEC_PROJ_Y_OFFSET:Int = -50;
 
     function startNeutralSpecialCooldown(){
         disableNeutralSpecial();
@@ -207,6 +180,8 @@ darkenFilter.brightness = -0.35; // Makes the icon 35% as bright as normal
 
 
 // ===== Side Special =====
+    var SIDE_SPECIAL_SHIELD_HIT_SPEED_PENALTY = -4;
+
     function onSideSpecialShieldHit(){
         self.setXSpeed(SIDE_SPECIAL_SHIELD_HIT_SPEED_PENALTY);
         self.setYSpeed(self.getYSpeed()*0.5);

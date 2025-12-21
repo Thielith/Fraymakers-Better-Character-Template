@@ -1,7 +1,7 @@
 {
   "export": true,
   "guid": "58f086bc-95ae-42a1-a6d7-4217fd4a8adf",
-  "id": "fraynkieAnimationStats",
+  "id": "animationStats",
   "language": "hscript",
   "pluginMetadata": {
     "com.fraymakers.FraymakersMetadata": {
