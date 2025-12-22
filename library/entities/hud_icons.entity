@@ -1,215 +1,404 @@
 {
-   "animations" : [
-      {
-         "$id" : "8654d3fa-17b6-4d72-9c14-50ca50af3c7f",
-         "layers" : [
-            "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
-            "a690bceb-a151-4b51-be99-c36af1a28862"
-         ],
-         "name" : "neutralSpecialCooldownIcon",
-         "pluginMetadata" : {}
-      },
-      {
-         "$id" : "dcef7f90-d822-4b9b-b34a-3a6625543bc7",
-         "layers" : [
-            "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
-            "f6967b7b-b2cc-4c88-a1d3-a13049485d2c"
-         ],
-         "name" : "neutralSpecialCooldownIcon_intro",
-         "pluginMetadata" : {}
-      },
-      {
-         "$id" : "c590b471-a77c-479c-8efd-6a1a94ed5994",
-         "layers" : [
-            "feeb63ba-138f-499c-8a86-5b3d01b6d585",
-            "c5eb9a50-798c-446f-8038-0873aa5fecb6"
-         ],
-         "name" : "hud_reference",
-         "pluginMetadata" : {}
+  "animations": [
+    {
+      "$id": "29234e88-8868-483c-a4b4-d363d6278ae0",
+      "layers": [
+        "073db0ff-af79-4e1a-a98c-c8571c8d3335",
+        "c1862d2a-bada-4598-96ca-d641b87e6616"
+      ],
+      "name": "neutralSpecialCooldownIcon",
+      "pluginMetadata": {
       }
-   ],
-   "export" : true,
-   "guid" : "ed353ea2-5cf8-46ef-a95e-fe9d6f1faf15",
-   "id" : "hud_icons",
-   "keyframes" : [
-      {
-         "$id" : "a498bc06-6a0e-4102-9995-33ac15a36a53",
-         "length" : 1,
-         "symbol" : "cb70ef38-3924-4768-94fb-531cd477636f",
-         "tweenType" : "LINEAR",
-         "tweened" : false,
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "8340c757-b9fc-4201-a36f-a53094bd6d19",
-         "length" : 1,
-         "symbol" : "05b3d11a-047a-43f1-ab1f-5ac42444f922",
-         "tweenType" : "LINEAR",
-         "tweened" : false,
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "6a38ff8b-b27e-47fc-8566-edd83f950c22",
-         "code" : "// Reference image of the default character hud. It can be pretty useful for positioning custom hud elements.",
-         "length" : 1,
-         "type" : "FRAME_SCRIPT"
-      },
-      {
-         "$id" : "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
-         "length" : 12,
-         "symbol" : "35f8e84e-c670-47cb-b56d-03376eca26d5",
-         "tweenType" : "EASE_OUT_QUAD",
-         "tweened" : true,
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
-         "length" : 37,
-         "symbol" : "",
-         "tweenType" : "LINEAR",
-         "tweened" : false,
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "128a9218-a693-49dc-b50e-e95100fca192",
-         "length" : 71,
-         "symbol" : "9697bee6-9ece-479d-a76d-9ffa07f48960",
-         "tweenType" : "LINEAR",
-         "tweened" : false,
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "da79b41c-ef42-4458-ab79-a2b0025f854f",
-         "code" : "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
-         "length" : 1,
-         "type" : "FRAME_SCRIPT"
-      },
-      {
-         "$id" : "93099ba5-29e6-4c97-a818-13c6cfce4501",
-         "code" : "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
-         "length" : 1,
-         "type" : "FRAME_SCRIPT"
+    },
+    {
+      "$id": "07d6d046-e36a-4b6c-9d96-da444387cf9f",
+      "layers": [
+        "c980051f-5bd5-4e14-88e9-5034d3dd46d9",
+        "ddff879c-00fe-42a3-a7e5-1aa8d924ee0d"
+      ],
+      "name": "neutralSpecialCooldownIcon_intro",
+      "pluginMetadata": {
       }
-   ],
-   "layers" : [
-      {
-         "$id" : "c51b3a83-234b-4a45-b809-5c1f66bdbdcd",
-         "hidden" : false,
-         "keyframes" : [ "a498bc06-6a0e-4102-9995-33ac15a36a53" ],
-         "locked" : false,
-         "name" : "Image 0",
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "feeb63ba-138f-499c-8a86-5b3d01b6d585",
-         "hidden" : false,
-         "keyframes" : [ "8340c757-b9fc-4201-a36f-a53094bd6d19" ],
-         "locked" : false,
-         "name" : "Image Layer",
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "c5eb9a50-798c-446f-8038-0873aa5fecb6",
-         "hidden" : false,
-         "keyframes" : [ "6a38ff8b-b27e-47fc-8566-edd83f950c22" ],
-         "language" : "hscript",
-         "locked" : false,
-         "name" : "Notes",
-         "type" : "FRAME_SCRIPT"
-      },
-      {
-         "$id" : "1ff5c6d5-7db7-4de9-b02a-fc88e94bd536",
-         "hidden" : false,
-         "keyframes" : [
-            "31b2cd60-05b5-4a1c-b0f1-90cf7f9de1d5",
-            "6acd6b40-cf5b-4ebd-af55-d5ab72e7696c",
-            "128a9218-a693-49dc-b50e-e95100fca192"
-         ],
-         "locked" : false,
-         "name" : "Image 0",
-         "type" : "IMAGE"
-      },
-      {
-         "$id" : "a690bceb-a151-4b51-be99-c36af1a28862",
-         "hidden" : false,
-         "keyframes" : [ "da79b41c-ef42-4458-ab79-a2b0025f854f" ],
-         "language" : "hscript",
-         "locked" : false,
-         "name" : "Notes",
-         "type" : "FRAME_SCRIPT"
-      },
-      {
-         "$id" : "f6967b7b-b2cc-4c88-a1d3-a13049485d2c",
-         "hidden" : false,
-         "keyframes" : [ "93099ba5-29e6-4c97-a818-13c6cfce4501" ],
-         "language" : "hscript",
-         "locked" : false,
-         "name" : "Notes",
-         "type" : "FRAME_SCRIPT"
+    },
+    {
+      "$id": "e47ca6ec-2109-40e4-9d15-820f1bd35d2c",
+      "layers": [
+        "3a522162-cc0d-43d1-9dd4-0168674a1139",
+        "7c603435-6f90-484f-b90d-b33ff26ebb1a"
+      ],
+      "name": "hud_reference",
+      "pluginMetadata": {
       }
-   ],
-   "paletteMap" : {
-      "paletteCollection" : null,
-      "paletteMap" : null
-   },
-   "pluginMetadata" : [],
-   "plugins" : [],
-   "symbols" : [
-      {
-         "$id" : "05b3d11a-047a-43f1-ab1f-5ac42444f922",
-         "alpha" : 1.0,
-         "imageAsset" : "8e75290c-7285-4103-8390-4021dcd4cf77",
-         "pivotX" : 75.0,
-         "pivotY" : 24.0,
-         "rotation" : 0.0,
-         "scaleX" : 1.0,
-         "scaleY" : 1.0,
-         "type" : "IMAGE",
-         "x" : 0.0,
-         "y" : -4.0
+    }
+  ],
+  "export": true,
+  "guid": "f658c055-5ca2-46cc-a9f4-34c6edc51290",
+  "id": "hud_icons",
+  "keyframes": [
+    {
+      "$id": "7bb6871f-c99a-493b-b7c0-f6d2a33d5ef2",
+      "code": "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
+      "length": 1,
+      "pluginMetadata": {
       },
-      {
-         "$id" : "cb70ef38-3924-4768-94fb-531cd477636f",
-         "alpha" : 1.0,
-         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
-         "pivotX" : 6.0,
-         "pivotY" : 6.0,
-         "rotation" : 0.0,
-         "scaleX" : 1.0,
-         "scaleY" : 1.0,
-         "type" : "IMAGE",
-         "x" : 43.0,
-         "y" : -9.0
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "f4e19795-01ea-4b89-b79a-45e438a6c63c",
+      "length": 1,
+      "pluginMetadata": {
       },
-      {
-         "$id" : "35f8e84e-c670-47cb-b56d-03376eca26d5",
-         "alpha" : 0.0,
-         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
-         "pivotX" : 6.0,
-         "pivotY" : 6.0,
-         "rotation" : 0.0,
-         "scaleX" : 1.0,
-         "scaleY" : 1.0,
-         "type" : "IMAGE",
-         "x" : 43.0,
-         "y" : -9.0
+      "symbol": "22aec991-a87b-45cb-b5a4-bc8c8aabd3ee",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "80aefdd8-8bf1-429e-bb91-496ff71523d1",
+      "length": 1,
+      "name": "",
+      "pluginMetadata": {
       },
-      {
-         "$id" : "9697bee6-9ece-479d-a76d-9ffa07f48960",
-         "alpha" : 1.0,
-         "imageAsset" : "19feab64-55a8-4f10-b1d2-71077a7da537",
-         "pivotX" : 6.0,
-         "pivotY" : 6.0,
-         "rotation" : 0.0,
-         "scaleX" : 1.0,
-         "scaleY" : 1.0,
-         "type" : "IMAGE",
-         "x" : 43.0,
-         "y" : -9.0
-      }
-   ],
-   "tags" : [],
-   "terrains" : [],
-   "tilesets" : [],
-   "version" : 14
+      "type": "LABEL"
+    },
+    {
+      "$id": "6ff529a3-6d44-4f02-a645-963ad631c106",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "829d762b-045b-4636-93a8-74812638b1e1",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "2553a1e3-9395-4780-a309-e2c697e48c14",
+      "length": 1,
+      "name": "",
+      "pluginMetadata": {
+      },
+      "type": "LABEL"
+    },
+    {
+      "$id": "b6cfa20e-afd1-4a32-bba7-50102f995f8e",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "b1dbebae-55fe-4879-a7b5-c8f2dc2193ea",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "1b474173-daa6-4abf-980b-0bbadcce04c6",
+      "code": "// Thielith note that's just parroting what Whimz said - \n// as you go adding more projectiles and such to your project, you'll find that making a unique entity for each of them quickly becomes somewhat impractical.\n//      e.g you have 5 unique projectiles, each with only an idle and destroy animation.\n//          would you rather hop between 5 separate entities or jump between animations in one entity?\n// the reason these cooldown icons aren't in menu.entity or character.entity is because that's not where it'd look like it goes based soley on name.\n//      (yes there are in-match hud icons for the fighter in menu.entity but it still applies; you wouldn't call the in-match hud a menu)\n//      (no, i won't move them out because it's the default and it'd break custom content that relies on that being the case)\n\n// it's ultimately up to your preference if you want to use .entity boxes or not.",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "54fb2f10-462f-488d-b870-4c600047c0c7",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "cfb40d37-9369-443d-8b76-e1df580b057d",
+      "length": 12,
+      "pluginMetadata": {
+      },
+      "symbol": "98e3aca4-e65e-4b00-a5b3-db8587f3c6f5",
+      "tweenType": "EASE_OUT_QUAD",
+      "tweened": true,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "b1097fe7-c81a-4cf2-a7ea-c52bb4748787",
+      "length": 71,
+      "pluginMetadata": {
+      },
+      "symbol": "94b9c697-834a-40bd-9d49-d9593f00a6b4",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "4cb2c783-ebcd-4c99-a05e-906e2e7d14ea",
+      "length": 37,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    },
+    {
+      "$id": "596cb4d6-c560-4553-a96f-7f60fabf7760",
+      "code": "// Reference image of the default character hud. It can be pretty useful for positioning custom hud elements.\n",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "62055bae-8f0d-40e9-98db-3b981c6246d1",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": "c62eacc2-d2b6-4a7b-9a9e-3386cf6d1e5d",
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
+    }
+  ],
+  "layers": [
+    {
+      "$id": "c1862d2a-bada-4598-96ca-d641b87e6616",
+      "hidden": false,
+      "keyframes": [
+        "7bb6871f-c99a-493b-b7c0-f6d2a33d5ef2"
+      ],
+      "language": "",
+      "locked": false,
+      "name": "Notes",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "073db0ff-af79-4e1a-a98c-c8571c8d3335",
+      "hidden": false,
+      "keyframes": [
+        "f4e19795-01ea-4b89-b79a-45e438a6c63c"
+      ],
+      "locked": false,
+      "name": "Image 0",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "a92d6df1-64a0-4151-9a97-28877081d580",
+      "hidden": false,
+      "keyframes": [
+        "80aefdd8-8bf1-429e-bb91-496ff71523d1"
+      ],
+      "locked": false,
+      "name": "Labels",
+      "pluginMetadata": {
+      },
+      "type": "LABEL"
+    },
+    {
+      "$id": "ee2e8900-3bd3-4fa7-9f51-d262d1fe8dae",
+      "hidden": false,
+      "keyframes": [
+        "6ff529a3-6d44-4f02-a645-963ad631c106"
+      ],
+      "language": "",
+      "locked": false,
+      "name": "Scripts",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "1a273813-88be-4121-a112-e7af7a16bf10",
+      "hidden": false,
+      "keyframes": [
+        "829d762b-045b-4636-93a8-74812638b1e1"
+      ],
+      "locked": false,
+      "name": "Image 0",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "fa1e1147-3bd8-42f9-a254-744c78bca48d",
+      "hidden": false,
+      "keyframes": [
+        "2553a1e3-9395-4780-a309-e2c697e48c14"
+      ],
+      "locked": false,
+      "name": "Labels",
+      "pluginMetadata": {
+      },
+      "type": "LABEL"
+    },
+    {
+      "$id": "37a6bd01-08e8-480c-aebb-75b9396206f4",
+      "hidden": false,
+      "keyframes": [
+        "b6cfa20e-afd1-4a32-bba7-50102f995f8e"
+      ],
+      "language": "",
+      "locked": false,
+      "name": "Scripts",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "6ae61352-1a8e-4179-b4b1-17bf81fe5f2e",
+      "hidden": false,
+      "keyframes": [
+        "b1dbebae-55fe-4879-a7b5-c8f2dc2193ea"
+      ],
+      "locked": false,
+      "name": "Image 0",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "c980051f-5bd5-4e14-88e9-5034d3dd46d9",
+      "hidden": false,
+      "keyframes": [
+        "4cb2c783-ebcd-4c99-a05e-906e2e7d14ea",
+        "cfb40d37-9369-443d-8b76-e1df580b057d",
+        "b1097fe7-c81a-4cf2-a7ea-c52bb4748787"
+      ],
+      "locked": false,
+      "name": "Image 0",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    },
+    {
+      "$id": "ddff879c-00fe-42a3-a7e5-1aa8d924ee0d",
+      "hidden": false,
+      "keyframes": [
+        "1b474173-daa6-4abf-980b-0bbadcce04c6",
+        "54fb2f10-462f-488d-b870-4c600047c0c7"
+      ],
+      "language": "",
+      "locked": false,
+      "name": "Notes",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "7c603435-6f90-484f-b90d-b33ff26ebb1a",
+      "hidden": false,
+      "keyframes": [
+        "596cb4d6-c560-4553-a96f-7f60fabf7760"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Notes",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "3a522162-cc0d-43d1-9dd4-0168674a1139",
+      "hidden": false,
+      "keyframes": [
+        "62055bae-8f0d-40e9-98db-3b981c6246d1"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
+    }
+  ],
+  "paletteMap": {
+    "paletteCollection": null,
+    "paletteMap": null
+  },
+  "pluginMetadata": {
+  },
+  "plugins": [
+  ],
+  "symbols": [
+    {
+      "$id": "22aec991-a87b-45cb-b5a4-bc8c8aabd3ee",
+      "alpha": 1,
+      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
+      "pivotX": 6,
+      "pivotY": 6,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": 43,
+      "y": -9
+    },
+    {
+      "$id": "98e3aca4-e65e-4b00-a5b3-db8587f3c6f5",
+      "alpha": 0,
+      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
+      "pivotX": 6,
+      "pivotY": 6,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": 43,
+      "y": -9
+    },
+    {
+      "$id": "94b9c697-834a-40bd-9d49-d9593f00a6b4",
+      "alpha": 1,
+      "imageAsset": "19feab64-55a8-4f10-b1d2-71077a7da537",
+      "pivotX": 6,
+      "pivotY": 6,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": 43,
+      "y": -9
+    },
+    {
+      "$id": "c62eacc2-d2b6-4a7b-9a9e-3386cf6d1e5d",
+      "alpha": 1,
+      "imageAsset": "8e75290c-7285-4103-8390-4021dcd4cf77",
+      "pivotX": 75,
+      "pivotY": 24,
+      "pluginMetadata": {
+      },
+      "rotation": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "type": "IMAGE",
+      "x": 0,
+      "y": -4
+    }
+  ],
+  "tags": [
+  ],
+  "terrains": [
+  ],
+  "tilesets": [
+  ],
+  "version": 14
 }

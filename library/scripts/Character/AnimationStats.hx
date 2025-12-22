@@ -65,6 +65,11 @@
 	dash_attack: {
 		xSpeedConservation: 1
 	},
+	//example of how to turn off armor color overlay using `bodyStatusShaderColor` below
+	// dash_attack: {
+	// 	xSpeedConservation: 1,
+	// 	bodyStatusShaderColor: 0x000000
+	// },
 	tilt_forward: {},
 	tilt_up: {},
 	tilt_down: {},
@@ -165,10 +170,7 @@
 		landType: LandType.TOUCH,
 		landAnimation: "land_heavy",
 		singleUse: true
-	}, 
-    //example of how to turn off armor color overlay using `bodyStatusShaderColor` below
-	//special_side: {bodyStatusShaderColor: 0x000000, allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel: false, landType: LandType.TOUCH, landAnimation: "land_heavy", singleUse: true},
-	//special_side_air: {bodyStatusShaderColor: 0x000000, allowFastFall: false, allowTurnOnFirstFrame: true, leaveGroundCancel: false, landType: LandType.TOUCH, landAnimation: "land_heavy", singleUse: true}, 
+	},
 
 	//THROWS
 	grab: {},

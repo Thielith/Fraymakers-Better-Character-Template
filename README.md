@@ -1,27 +1,20 @@
 # Better Fraymakers Character Template for FrayTools
 
-## Overview
+# Overview
 
-This is the FrayTools project for the Fraymakers Character Template which demonstrates how to create a basic playable character for Fraymakers. You must have FrayTools installed on your system in order to view and modify this project.
+This is a modification of the original Fraymakers Character Template, which can be found here:  https://github.com/Fraymakers/character-template
+If you want a tutorial as to how to use this, follow the one found in the original Fraymakers Character Template.
 
-## Downloading FrayTools
+The purpose of this template is to improve upon the original template and implement changes the community wants while we wait for an official update to the template.  This also aims to be a good base for other templates to be made out of.
 
-Download FrayTools for your operating system here: [https://fraytools.com/downloads/](https://fraytools.com/downloads/)
-
-Then download the latest version of the following FrayTools Plugins below:
-* Fraymakers Exporter:
-[https://github.com/Fraymakers/content-exporter-plugin/releases](https://github.com/Fraymakers/content-exporter-plugin/releases)
-* Fraymakers Metadata Definitions:
-[https://github.com/Fraymakers/metadata-plugin/releases](https://github.com/Fraymakers/metadata-plugin/releases)
-* Api Types (Optional but highly recommended):
-[https://github.com/Fraymakers/api-types-plugin/releases](https://github.com/Fraymakers/api-types-plugin/releases)
-
-Finally, open the `.fraytools` project file in FrayTools and you should be good to go!
-
-For additional setup instructions, check out our [Deep Dive Guide](https://docs.google.com/document/d/1o6CE04FRaqQyksD2uX7zxOQXYiZ_M2YCwtqK0mMoARY/edit?usp=sharing).
-
-
-## Changes Made
+## **Matches content featured in Character Template 0.3.0**
+**Compatible with Fraymakers Alpha Build Version 0.8.6+**
+Character templates are not strictly stuck to certain Fraymakers versions, however the template may not implement certain future features (e.g  0.2.6 doesn't have wall jump code as it didn't exist at that template version).
+Fraymakers is generally built with compatibility in mind, having fallbacks for features older custom content might not implement.  ***However,*** you should always use the most up-to-date version of the template, regardless of if you use this better template or not.
+### Compatible with Fraytools Manager
+(hopefully)
+Can be found here:  https://github.com/shifterbit/fraytools-manager
+# Changes Made
 **Overall**
 - All instances of "charactertemplate" are replaced with "fraynkie".
 - All instances of "charactertemplateNspecProjectile" are replaced with "fraynkieProjectile".
@@ -117,10 +110,7 @@ special_up: {  // updated on frame 6, 7
 
 **menu.entity**
    - Added comments where they'd be helpful
-
-
-
-## Credits / Thanks
+# Credits / Thanks
 - Thielith - Current maintainer.
 - gaming.__ - For letting me absorb their own Better Template into this one.
 - Whimz - For giving good feedback.
