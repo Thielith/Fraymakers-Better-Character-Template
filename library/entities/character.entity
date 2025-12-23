@@ -360,6 +360,16 @@
       }
     },
     {
+      "$id": "eb08ac00-dc31-4eab-8e95-365596a13f57",
+      "layers": [
+        "cdd22287-b779-49ef-8063-b3acb0215044",
+        "9223920f-09b1-48c9-ad27-e5053d078d09"
+      ],
+      "name": "----- Ledge Stuff -----",
+      "pluginMetadata": {
+      }
+    },
+    {
       "$id": "f0b24894-528e-404b-830f-7f77883a249a",
       "layers": [
         "1d358f58-37b0-4014-a927-0b63bc3f27b6",
@@ -42573,6 +42583,24 @@
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "b07de781-d8c3-4924-bbc0-1d40b8f34a7e",
+      "code": "",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "13f4486e-42d3-488f-82de-e575f7897194",
+      "length": 1,
+      "pluginMetadata": {
+      },
+      "symbol": null,
+      "tweenType": "LINEAR",
+      "tweened": false,
+      "type": "IMAGE"
     }
   ],
   "layers": [
@@ -55032,6 +55060,31 @@
       "pluginMetadata": {
       },
       "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "9223920f-09b1-48c9-ad27-e5053d078d09",
+      "hidden": false,
+      "keyframes": [
+        "b07de781-d8c3-4924-bbc0-1d40b8f34a7e"
+      ],
+      "language": "hscript",
+      "locked": false,
+      "name": "Frame Script Layer",
+      "pluginMetadata": {
+      },
+      "type": "FRAME_SCRIPT"
+    },
+    {
+      "$id": "cdd22287-b779-49ef-8063-b3acb0215044",
+      "hidden": false,
+      "keyframes": [
+        "13f4486e-42d3-488f-82de-e575f7897194"
+      ],
+      "locked": false,
+      "name": "Image Layer",
+      "pluginMetadata": {
+      },
+      "type": "IMAGE"
     }
   ],
   "paletteMap": {
