@@ -43,7 +43,7 @@ function update() {
 
 // =====================================================
 function createAfterImage(){
-	match.createVfx(new VfxStats({
+	var afterImage:Vfx = match.createVfx(new VfxStats({
 		spriteContent: self.getResource().getContent("projectile"),
 		animation: "idle",
 		relativeWith: false,
@@ -54,6 +54,8 @@ function createAfterImage(){
 		flipWith: true,
 		layer: VfxLayer.CHARACTERS_BACK
 	}));
+
+	afterImage.addShader(self.getCostumeShader());
 }
 
 function destroy() {

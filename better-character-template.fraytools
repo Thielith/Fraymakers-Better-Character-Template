@@ -56,11 +56,15 @@
     {
       "id": "build0",
       "path": "./build"
+    },
+    {
+      "id": "build1",
+      "path": "../../../../mods/fraymakers/game-files/custom/Better Template"
     }
   ],
   "snapToPixel": true,
   "templateDescription": "A better character sample project for Fraymakers.",
   "templateName": "Better Fraymakers Character Template",
-  "templateVersion": "0.2.0",
+  "templateVersion": "0.2.1",
   "version": 12
 }
