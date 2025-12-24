@@ -9,13 +9,12 @@ The purpose of this template is to improve upon the original template and implem
 
 ## **Matches content featured in Character Template 0.3.0**
 **Compatible with Fraymakers Alpha Build Version 0.8.6+**.  Character templates are not strictly stuck to certain Fraymakers versions, however the template may not implement certain future features (e.g  0.2.6 doesn't have wall jump code as it didn't exist at that template version).
-Fraymakers is generally built with compatibility in mind, having fallbacks for features older custom content might not implement.  ***However,*** you should always use the most up-to-date version of the template, regardless of if you use this better template or not.
+Fraymakers generally updates with compatibility in mind, having fallbacks for features older custom content might not implement.  ***However,*** you should always use the most up-to-date version of the template, regardless of if you use this better template or not.
 
 ## Animation Checklist included.
 You don't have to use it, but it's a nice way to keep track of what animations are left.  Can be found in `Animation Checklist.md`.
 
 ## Compatible with Fraytools Manager
-(hopefully)
 Can be found here:  https://github.com/shifterbit/fraytools-manager
 
 # Changes Made
@@ -47,6 +46,8 @@ special_up: {  // updated on frame 6, 7
 	- *I (Thielith) might have missed some.  Let me know if I did.*
 - (gaming.\_\_) Added reference image of HUD to some places.
 - Added folders for each animation so you don't have to make them yourself.
+- Added a gold palette example.
+	- Honorable mention to Whimz and Fella for creating code for generating the sparkles before we got the official function for doing it.  If Team Fray didn't add the `startBodySparkleEffect()` function in the Shopkeeper update / API Types 0.8.0, I probably would've used that.
 
 **Project**
 - (gaming.\_\_) Framerate set to 180.

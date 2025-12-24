@@ -394,6 +394,74 @@
           "isBase": false
         }
       }
+    },
+    {
+      "$id": "4249418b-4d52-4c80-8e63-574d575f1a21",
+      "colors": [
+        {
+          "paletteColorId": "a989c4a7-811c-4493-858b-8039b88db2aa",
+          "targetColor": "0xFFFFEF4D"
+        },
+        {
+          "paletteColorId": "23f12f1d-cdd4-4473-b6fc-e0197e11d160",
+          "targetColor": "0xFFE7BD2D"
+        },
+        {
+          "paletteColorId": "e69253c7-82b9-4b55-be9f-67760d7de87c",
+          "targetColor": "0xFFAB781F"
+        },
+        {
+          "paletteColorId": "00ed8f8a-aa65-4240-96fd-66c2f582eb67",
+          "targetColor": "0xFFFFEF4D"
+        },
+        {
+          "paletteColorId": "2c8a6431-a2b4-4960-b51f-122248dc4ae1",
+          "targetColor": "0xFFE7BD2D"
+        },
+        {
+          "paletteColorId": "0ce8d6cd-82b7-46b1-a3b0-dafe962b6bb8",
+          "targetColor": "0xFFAB781F"
+        },
+        {
+          "paletteColorId": "0dfff795-36db-49d8-9700-8caee51ac743",
+          "targetColor": "0xFFFFEF4D"
+        },
+        {
+          "paletteColorId": "f5cd0dd3-cd75-45bd-a77e-cc3c68d2ec01",
+          "targetColor": "0xFFE7BD2D"
+        },
+        {
+          "paletteColorId": "9ae8f54c-ab9a-4b1e-a9f9-2af8280cc454",
+          "targetColor": "0xFFAB781F"
+        },
+        {
+          "paletteColorId": "0205c81d-6a23-4b9b-b4fe-bae7e52e7997",
+          "targetColor": "0xFF683D0F"
+        },
+        {
+          "paletteColorId": "b46507b5-d1f7-4ad4-bccb-42c9d2e84917",
+          "targetColor": "0xFFFFEF4D"
+        },
+        {
+          "paletteColorId": "e478bbbf-b066-4fcf-b734-6c7524c11807",
+          "targetColor": "0xFFE7BD2D"
+        },
+        {
+          "paletteColorId": "21698672-abcc-4e86-b65c-30145282619f",
+          "targetColor": "0xFFAB781F"
+        },
+        {
+          "paletteColorId": "e91bdaa9-3f6e-459f-adf4-21e22a8b9991",
+          "targetColor": "0xFF683D0F"
+        },
+        {
+          "paletteColorId": "d94a93fb-39e3-44c7-9b34-bc99ea61f054",
+          "targetColor": "0xFF2C1903"
+        }
+      ],
+      "name": "Gold",
+      "pluginMetadata": {
+      }
     }
   ],
   "pluginMetadata": {

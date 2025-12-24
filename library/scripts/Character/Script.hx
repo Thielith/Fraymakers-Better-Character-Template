@@ -29,6 +29,11 @@
         // }
 
         setupHUD();
+        
+        // Base = 0, Green = 1, Purple = 2, etc.
+        if(self.getCostumeIndex() == 4){  
+            setupGoldPalette();
+        }
     }
 
     function update(){
@@ -42,6 +47,21 @@
     function onTeardown() {
     }
 // ===== end general functions =====
+
+// ===== gold palette vfx =====
+    function setupGoldPalette(){
+        self.startBodySparkleEffect({
+            color: 0x000000,  // this applies a color overlay to the character itself, not the sparkles
+            fadeIn: 0,  // this is for the color overlay
+            fadeOut: 0,  // this is for the color overlay
+            sparkleEffect: "vfx_gold_sparkle",  // same sparkle the official gold palettes use
+            sparkleInterval: 5,  // in frames, might not be accurate to official ones
+            sparkleRandomRotation: true,
+            boxType: CollisionBoxType.HURT,  // box type to spawn particles around
+            duration: 2147483647,  // in frames
+        });
+    }
+// ===== end gold palette vfx ======
 
 
 // ===== HUD icon setup =====
